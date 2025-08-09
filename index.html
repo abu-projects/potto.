@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>  potto.eu |  IT-Dienstleistungen in Mainz</title>
+<meta name="description" 
+content="Zuverlässige IT-Services seit 1997 in Mainz: Beratung, 
+Reparatur, Netzwerke, Wartung & Internet-Lösungen. Schnelle Hilfe vor Ort & Remote.
+ Jetzt beraten lassen!">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+      font-family: 'Poppins', sans-serif;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#202F57",
+              secondary: "#2CB0DB",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :where([class^="ri-"])::before {
+      content: "\f3c2";
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+      <div class="bg-secondary text-white py-2">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
+    <div class="flex items-center space-x-6">
+      <div class="flex items-center">
+        <div class="w-4 h-4 flex items-center justify-center mr-2">
+          <i class="ri-phone-line text-xs"></i>
+        </div>
+        <span>+49 6131 123456</span>
+      </div>
+      <div class="flex items-center">
+        <div class="w-4 h-4 flex items-center justify-center mr-2">
+          <i class="ri-mail-line text-xs"></i>
+        </div>
+        <span>info@pc-verkauf.de</span>
+      </div>
+    </div>
+    <div class="flex items-center space-x-4 text-base">
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-facebook-line"></i>
+      </div>
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-twitter-x-line"></i> <!-- changed from twitter to x -->
+      </div>
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-linkedin-line"></i>
+      </div>
+    </div>
+  </div>
+</div>
+      <nav class="bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+              <div class="flex items-center">
+                <img
+                  src="https://static.readdy.ai/image/3fbc212699fd94419ff9b65c079d4941/d40f587ec862f25209d902517526dd8f.png"
+                  alt="potto.eu Logo"
+                  class="h-24 w-auto object-contain mr-3 py-6 px-3"
+                />
+              </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+              <a
+                href="#home"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Home</a
+              >
+              <a
+                href="#services"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Services</a
+              >
+              <a
+                href="#contact"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Kontakt</a
+              >
+              <a
+                href="#impressum"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Impressum</a
+              >
+            </div>
+            <div class="md:hidden">
+              <button
+                id="mobile-menu-button"
+                class="w-8 h-8 flex items-center justify-center"
+              >
+                <i class="ri-menu-line text-xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden bg-white border-t border-gray-100"
+        >
+          <div class="px-4 py-2 space-y-1">
+            <a
+              href="#home"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Home</a
+            >
+            <a
+              href="#services"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Services</a
+            >
+            <a
+              href="#contact"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Kontakt</a
+            >
+            <a
+              href="#impressum"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Impressum</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="pt-24">
+      <section id="home" class="relative bg-[#e5f9ff] min-h-[600px] flex items-center py-12 md:py-0">
+        <div class="max-w-7xl mx-auto w-full flex flex-col-reverse md:flex-row items-center justify-between px-4">
+          <!-- Left: Text + Benefits -->
+          <div class="w-full md:w-1/2 flex flex-col items-start">
+            <h1 class="text-4xl md:text-5xl font-bold text-primary mb-5">
+              Ihr IT-Partner in Mainz &amp; Umgebung
+            </h1>
+            <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-xl">
+              Verlassen Sie sich auf zuverlässige IT-Lösungen und persönlichen Service – für Unternehmen &amp; Privatkunden. Wir bieten schnelle Hilfe, persönliche Beratung und maßgeschneiderte Lösungen rund um Computer, Netzwerke und mehr.
+            </p>
+            <a href="#contact" class="inline-block bg-secondary hover:bg-primary text-white font-semibold px-8 py-4 rounded-button text-lg mb-10 shadow transition">
+              Jetzt kostenlos beraten lassen
+            </a>
+            <div class="flex flex-col sm:flex-row gap-6 w-full">
+              <!-- Benefit 1 -->
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4">
+                  <i class="ri-flashlight-line text-secondary text-2xl"></i>
+                </div>
+                <div>
+                  <div class="font-semibold text-gray-900">Schnelle Hilfe</div>
+                  <div class="text-gray-600 text-sm">Vor-Ort &amp; Fernwartung</div>
+                </div>
+              </div>
+              <!-- Benefit 2 -->
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4">
+                  <i class="ri-user-heart-line text-secondary text-2xl"></i>
+                </div>
+                <div>
+                  <div class="font-semibold text-gray-900">Persönliche Beratung</div>
+                  <div class="text-gray-600 text-sm">Individuell &amp; ehrlich</div>
+                </div>
+              </div>
+              <!-- Benefit 3 -->
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4">
+                  <i class="ri-tools-line text-secondary text-2xl"></i>
+                </div>
+                <div>
+                  <div class="font-semibold text-gray-900">Maßgeschneiderte Lösungen</div>
+                  <div class="text-gray-600 text-sm">Für jede Anforderung</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Right: Image -->
+          <div class="w-full md:w-1/2 flex justify-end mb-10 md:mb-0">
+            <img
+              src="assists/imgs/hero.png"
+              alt="IT-Techniker bei der Arbeit"
+              class=""
+            />
+          </div>
+        </div>
+      </section>
+      <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+              Unsere Services
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Umfassende Computer-Serviceleistungen für optimale IT-Performance
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white border rounded-lg overflow-hidden relative">
+              <div class="relative">
+                <img src="assists/imgs/Softwareentwicklung.png" alt="Softwareentwicklung" class="w-full h-40 object-cover">
+                <div class="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 z-10">
+                  <div class="w-14 h-14 rounded-full bg-white shadow-md ring-1 ring-black/5 flex items-center justify-center">
+                    <i class="ri-code-box-line text-secondary text-2xl"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 pt-10">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Softwareentwicklung & Anpassungen</h3>
+                <p class="text-gray-600 text-sm">
+                  Wir entwickeln <span class="text-secondary font-medium">maßgeschneiderte Software</span> und <span class="text-secondary font-medium">individuelle Programme</span> für Ihren Erfolg.
+                </p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white border rounded-lg overflow-hidden relative">
+              <div class="relative">
+                <img src="assists/imgs/Computerzubehör.png" alt="Computerzubehör" class="w-full h-40 object-cover">
+                <div class="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 z-10">
+                  <div class="w-14 h-14 rounded-full bg-white shadow-md ring-1 ring-black/5 flex items-center justify-center">
+                    <i class="ri-shopping-bag-3-line text-secondary text-2xl"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 pt-10">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Computerzubehör & Beratung</h3>
+                <p class="text-gray-600 text-sm">
+                  <span class="text-secondary font-medium">Umfangreiches Sortiment</span> und persönliche Beratung in unserem Mainzer Shop.
+                </p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white border rounded-lg overflow-hidden relative">
+              <div class="relative">
+                <img src="assists/imgs/Fehlerdiagnose.png" alt="Fehlerdiagnose" class="w-full h-40 object-cover">
+                <div class="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 z-10">
+                  <div class="w-14 h-14 rounded-full bg-white shadow-md ring-1 ring-black/5 flex items-center justify-center">
+                    <i class="ri-tools-line text-secondary text-2xl"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 pt-10">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Fehlerdiagnose & Reparatur</h3>
+                <p class="text-gray-600 text-sm">
+                  Professionelle <span class="text-secondary font-medium">Analyse</span> und <span class="text-secondary font-medium">Reparatur</span> Ihrer Geräte – schnell, zuverlässig und transparent.
+                </p>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-white border rounded-lg overflow-hidden relative">
+              <div class="relative">
+                <img src="assists/imgs/Computernetzwerk.png" alt="Computernetzwerk" class="w-full h-40 object-cover">
+                <div class="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 z-10">
+                  <div class="w-14 h-14 rounded-full bg-white shadow-md ring-1 ring-black/5 flex items-center justify-center">
+                    <i class="ri-router-line text-secondary text-2xl"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 pt-10">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Computernetzwerk-Dienstleistungen</h3>
+                <p class="text-gray-600 text-sm">
+                  Effiziente <span class="text-secondary font-medium">Vernetzung</span> und <span class="text-secondary font-medium">IT-Infrastruktur</span> für Unternehmen.
+                </p>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="bg-white border rounded-lg overflow-hidden relative">
+              <div class="relative">
+                <img src="assists/imgs/Service & Wartungsverträge.png" alt="Service und Wartungsverträge" class="w-full h-40 object-cover">
+                <div class="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 z-10">
+                  <div class="w-14 h-14 rounded-full bg-white shadow-md ring-1 ring-black/5 flex items-center justify-center">
+                    <i class="ri-shield-check-line text-secondary text-2xl"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 pt-10">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Service & Wartungsverträge</h3>
+                <p class="text-gray-600 text-sm">
+                  Individuelle <span class="text-secondary font-medium">Wartungspakete</span> für eine sorgenfreie IT.
+                </p>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="bg-white border rounded-lg overflow-hidden relative">
+              <div class="relative">
+                <img src="assists/imgs/dsl.png" alt="DSL und Internet Produkte" class="w-full h-40 object-cover">
+                <div class="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 z-10">
+                  <div class="w-14 h-14 rounded-full bg-white shadow-md ring-1 ring-black/5 flex items-center justify-center">
+                    <i class="ri-wifi-line text-secondary text-2xl"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 pt-10">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">DSL & Internet Produkte</h3>
+                <p class="text-gray-600 text-sm">
+                  Passende <span class="text-secondary font-medium">Internetlösungen</span> für Privat- und Geschäftskunden.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                Über 25 Jahre Erfahrung in der IT-Branche
+              </h2>
+              <p class="text-lg text-gray-600 mb-8">
+                Seit 1997 sind wir Ihr vertrauensvoller Partner für alle
+                IT-Angelegenheiten in Mainz. Mit unserem erfahrenen Team und
+                modernster Ausstattung lösen wir auch komplexeste technische
+                Herausforderungen zuverlässig und effizient.
+              </p>
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mr-3 mt-1"
+                  >
+                    <i class="ri-check-line text-secondary text-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-1">
+                      Zertifizierte Experten
+                    </h4>
+                    <p class="text-gray-600 text-sm">
+                      Kontinuierliche Weiterbildung unseres Teams
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mr-3 mt-1"
+                  >
+                    <i class="ri-check-line text-secondary text-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-1">
+                      24/7 Support
+                    </h4>
+                    <p class="text-gray-600 text-sm">
+                      Notfall-Service für kritische Systeme
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mr-3 mt-1"
+                  >
+                    <i class="ri-check-line text-secondary text-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-1">
+                      Faire Preise
+                    </h4>
+                    <p class="text-gray-600 text-sm">
+                      Transparente Kostenstruktur ohne versteckte Gebühren
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mr-3 mt-1"
+                  >
+                    <i class="ri-check-line text-secondary text-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-1">
+                      Vor-Ort-Service
+                    </h4>
+                    <p class="text-gray-600 text-sm">
+                      Schnelle Hilfe direkt bei Ihnen vor Ort
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative">
+              <img
+                src="https://readdy.ai/api/search-image?query=Modern%20minimalist%20IT%20workspace%20with%20sleek%20white%20desks%20and%20premium%20computer%20setups%2C%20elegant%20corporate%20environment%20with%20glass%20walls%20and%20ambient%20lighting%2C%20high-end%20technology%20office%20space%20with%20clean%20lines%20and%20professional%20atmosphere%2C%20sophisticated%20tech%20environment&width=600&height=400&seq=about001&orientation=landscape"
+                alt="IT Service Team"
+                class="rounded-lg shadow-lg object-cover w-full h-96"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+              Kontakt aufnehmen
+            </h2>
+            <p class="text-xl text-gray-600">
+              Haben Sie Fragen oder benötigen Sie Unterstützung? Wir sind für
+              Sie da!
+            </p>
+          </div>
+          <div class="grid lg:grid-cols-2 gap-12">
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-900 mb-8">
+                Kontaktinformationen
+              </h3>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div
+                    class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4"
+                  >
+                    <div class="w-6 h-6 flex items-center justify-center">
+                      <i class="ri-map-pin-line text-secondary text-lg"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-1">Adresse</h4>
+                    <p class="text-gray-600">
+                      Musterstraße 123<br />
+                      55116 Mainz<br />
+                      Deutschland
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4"
+                  >
+                    <div class="w-6 h-6 flex items-center justify-center">
+                      <i class="ri-phone-line text-secondary text-lg"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-1">Telefon</h4>
+                    <p class="text-gray-600">+49 6131 123456</p>
+                    <p class="text-gray-600">Fax: +49 6131 123457</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4"
+                  >
+                    <div class="w-6 h-6 flex items-center justify-center">
+                      <i class="ri-mail-line text-secondary text-lg"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-1">E-Mail</h4>
+                    <p class="text-gray-600">info@pc-verkauf.de</p>
+                    <p class="text-gray-600">support@pc-verkauf.de</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4"
+                  >
+                    <div class="w-6 h-6 flex items-center justify-center">
+                      <i class="ri-time-line text-secondary text-lg"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-1">
+                      Öffnungszeiten
+                    </h4>
+                    <p class="text-gray-600">
+                      Mo-Fr: 08:00 - 18:00 Uhr<br />
+                      Sa: 09:00 - 14:00 Uhr<br />
+                      So: Geschlossen
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-sm p-8">
+              <h3 class="text-2xl font-semibold text-gray-900 mb-6">
+                Anfrage senden
+              </h3>
+              <form id="contact-form" class="space-y-6">
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      for="name"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                      >Name *</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-sm font-medium text-gray-700 mb-2"
+                      >E-Mail *</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label
+                    for="phone"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Telefon</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="subject"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Betreff *</label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-gray-700 mb-2"
+                    >Nachricht *</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm resize-vertical"
+                  ></textarea>
+                </div>
+                <div class="flex items-start">
+                  <div class="flex items-center h-5">
+                    <input
+                      id="privacy"
+                      name="privacy"
+                      type="checkbox"
+                      required
+                      class="w-4 h-4 text-primary bg-gray-100 border-gray-300 rounded focus:ring-primary focus:ring-2"
+                    />
+                  </div>
+                  <div class="ml-3 text-sm">
+                    <label for="privacy" class="text-gray-700">
+                      Ich stimme der Verarbeitung meiner Daten gemäß der
+                      <a href="#impressum" class="text-primary hover:underline"
+                        >Datenschutzerklärung</a
+                      >
+                      zu. *
+                    </label>
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-secondary hover:bg-primary/90 text-white py-3 px-6 !rounded-button font-semibold whitespace-nowrap"
+                >
+                  Nachricht senden
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <div class="flex items-center mb-6">
+              <img
+                src="https://static.readdy.ai/image/3fbc212699fd94419ff9b65c079d4941/fc6c559962bb534d980c698712fcad61.png"
+                alt="potto.eu Logo"
+                class="h-12 w-auto object-contain"
+              />
+            </div>
+            <p class="text-gray-400 mb-6">
+              Seit 1997 Ihr vertrauensvoller Partner für professionelle
+              IT-Dienstleistungen in Mainz.
+            </p>
+            <div class="flex space-x-4">
+              <div
+                class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary cursor-pointer"
+              >
+                <i class="ri-facebook-line text-sm"></i>
+              </div>
+              <div
+                class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary cursor-pointer"
+              >
+                <i class="ri-twitter-x-line text-sm"></i>
+              </div>
+              <div
+                class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary cursor-pointer"
+              >
+                <i class="ri-linkedin-line text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Kontakt</h3>
+            <div class="space-y-4 text-gray-400">
+              <div class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mr-3 mt-0.5"
+                >
+                  <i class="ri-map-pin-line text-xs"></i>
+                </div>
+                <div>
+                  Musterstraße 123<br />
+                  55116 Mainz, Deutschland
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="ri-phone-line text-xs"></i>
+                </div>
+                <span>+49 6131 123456</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="ri-mail-line text-xs"></i>
+                </div>
+                <span>info@pc-verkauf.de</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Wichtige Links</h3>
+            <div class="space-y-3">
+              <a href="#home" class="block text-gray-400 hover:text-white"
+                >Home</a
+              >
+              <a href="#services" class="block text-gray-400 hover:text-white"
+                >Services</a
+              >
+              <a href="#contact" class="block text-gray-400 hover:text-white"
+                >Kontakt</a
+              >
+              <a href="#impressum" class="block text-gray-400 hover:text-white"
+                >Impressum</a
+              >
+              <a
+                href="#datenschutz"
+                class="block text-gray-400 hover:text-white"
+                >Datenschutz</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>
+            &copy; 2025 potto.eu - IT-Dienstleistungen Otto. Alle Rechte
+            vorbehalten.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div
+      id="impressum-page"
+      class="hidden fixed inset-0 bg-white z-50 overflow-y-auto"
+    >
+      <div class="min-h-screen">
+        <header class="bg-white shadow-sm">
+          <div
+            class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center"
+          >
+            <h1 class="text-2xl font-bold text-gray-900">Impressum</h1>
+            <button
+              id="close-impressum"
+              class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-700"
+            >
+              <i class="ri-close-line text-xl"></i>
+            </button>
+          </div>
+        </header>
+        <main class="max-w-4xl mx-auto px-4 py-12">
+          <div class="prose prose-lg max-w-none">
+            <h2>Angaben gemäß § 5 TMG</h2>
+            <p>
+              IT-Dienstleistungen Otto<br />
+              PC-Verkauf.de<br />
+              Musterstraße 123<br />
+              55116 Mainz<br />
+              Deutschland
+            </p>
+            <h3>Vertreten durch:</h3>
+            <p>Otto Mustermann</p>
+            <h3>Kontakt:</h3>
+            <p>
+              Telefon: +49 6131 123456<br />
+              Fax: +49 6131 123457<br />
+              E-Mail: info@pc-verkauf.de
+            </p>
+            <h3>Umsatzsteuer-ID:</h3>
+            <p>
+              Umsatzsteuer-Identifikationsnummer gemäß §27a
+              Umsatzsteuergesetz:<br />
+              DE123456789
+            </p>
+            <h3>Wirtschafts-ID:</h3>
+            <p>DE123456789</p>
+            <h3>Aufsichtsbehörde:</h3>
+            <p>
+              Handwerkskammer Rheinhessen<br />
+              Dagobertstraße 2<br />
+              55116 Mainz
+            </p>
+            <h3>Berufsbezeichnung und berufsrechtliche Regelungen:</h3>
+            <p>
+              Berufsbezeichnung: IT-Systemelektroniker<br />
+              Zuständige Kammer: Handwerkskammer Rheinhessen<br />
+              Verliehen durch: Deutschland
+            </p>
+            <h2>Haftung für Inhalte</h2>
+            <p>
+              Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene
+              Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
+              verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter
+              jedoch nicht unter der Verpflichtung, übermittelte oder
+              gespeicherte fremde Informationen zu überwachen oder nach
+              Umständen zu forschen, die auf eine rechtswidrige Tätigkeit
+              hinweisen.
+            </p>
+            <h2>Haftung für Links</h2>
+            <p>
+              Unser Angebot enthält Links zu externen Websites Dritter, auf
+              deren Inhalte wir keinen Einfluss haben. Deshalb können wir für
+              diese fremden Inhalte auch keine Gewähr übernehmen. Für die
+              Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
+              oder Betreiber der Seiten verantwortlich.
+            </p>
+            <h2>Urheberrecht</h2>
+            <p>
+              Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
+              diesen Seiten unterliegen dem deutschen Urheberrecht. Die
+              Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
+              Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
+              schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+            </p>
+            <h2>Datenschutz</h2>
+            <p>
+              Die Nutzung unserer Webseite ist in der Regel ohne Angabe
+              personenbezogener Daten möglich. Soweit auf unseren Seiten
+              personenbezogene Daten (beispielsweise Name, Anschrift oder
+              E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich,
+              stets auf freiwilliger Basis.
+            </p>
+            <p class="text-sm text-gray-500 mt-12">Stand: Januar 2024</p>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script id="mobile-menu-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+        });
+      });
+    </script>
+    <script id="impressum-modal-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const impressumLinks = document.querySelectorAll('a[href="#impressum"]');
+        const impressumPage = document.getElementById("impressum-page");
+        const closeImpressum = document.getElementById("close-impressum");
+        impressumLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            impressumPage.classList.remove("hidden");
+            document.body.style.overflow = "hidden";
+          });
+        });
+        closeImpressum.addEventListener("click", function () {
+          impressumPage.classList.add("hidden");
+          document.body.style.overflow = "auto";
+        });
+      });
+    </script>
+    <script id="contact-form-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const contactForm = document.getElementById("contact-form");
+        contactForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const formData = new FormData(contactForm);
+          const data = Object.fromEntries(formData);
+          alert(
+            "Vielen Dank für Ihre Anfrage! Wir werden uns schnellstmöglich bei Ihnen melden.",
+          );
+          contactForm.reset();
+        });
+      });
+    </script>
+    <script id="smooth-scroll-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll('a[href^="#"]');
+        links.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            const href = this.getAttribute("href");
+            if (href === "#impressum") return;
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
