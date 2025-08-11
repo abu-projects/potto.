@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verkauf - PC-Verkauf.de - IT-Dienstleistungen Otto</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Poppins', sans-serif;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#202F57',
+secondary: '#2CB0DB'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+},
+fontFamily: {
+'sans': ['Poppins', 'sans-serif']
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+</style>
+</head>
+<body class="bg-white">
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+      <div class="bg-secondary text-white py-2">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
+    <div class="flex items-center space-x-6">
+      <div class="flex items-center">
+        <div class="w-4 h-4 flex items-center justify-center mr-2">
+          <i class="ri-phone-line text-xs"></i>
+        </div>
+        <span class=" max-[465px]:hidden">+49 6131 123456</span>
+      </div>
+      <div class="flex items-center">
+        <div class="w-4 h-4 flex items-center justify-center mr-2">
+          <i class="ri-mail-line text-xs"></i>
+        </div>
+        <span class="max-[465px]:hidden ">info@pc-verkauf.de</span>
+      </div>
+    </div>
+    <div class="flex items-center space-x-4 text-base">
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-facebook-line"></i>
+      </div>
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-twitter-x-line"></i> <!-- changed from twitter to x -->
+      </div>
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-linkedin-line"></i>
+      </div>
+    </div>
+  </div>
+</div>
+      <nav class="bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+              <div class="flex items-center">
+                <img
+                  src="https://static.readdy.ai/image/3fbc212699fd94419ff9b65c079d4941/d40f587ec862f25209d902517526dd8f.png"
+                  alt="potto.eu Logo"
+                  class="h-24 w-auto object-contain mr-3 py-6 px-3"
+                />
+              </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+              <a
+                href="index.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Home</a
+              >
+              <a
+                href="services.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Services</a
+              >
+                <a
+                href="kauf.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Kauf</a
+              >
+              <a
+                href="Konakt.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Kontakt</a
+              >
+            
+              <a href="services.html#service-anf" class="inline-block bg-secondary hover:bg-primary text-white font-semibold px-8 py-2 rounded-button text-lg   shadow transition">
+              Service anfordern
+            </a>
+            </div>
+
+            <div class="md:hidden">
+              <button
+                id="mobile-menu-button"
+                class="w-8 h-8 flex items-center justify-center"
+              >
+                <i class="ri-menu-line text-xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      <div
+        
+          id="mobile-menu"
+          class="hidden md:hidden bg-white border-t border-gray-100"
+        >
+          <div class="px-4 py-2 space-y-1">
+            <a
+              href="index.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Services</a
+            >
+            <a
+              href="kauf.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Kauf</a
+            >
+            <a
+              href="Konakt.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Kontact</a
+            >
+                <a href="services.html#service-anf" class="inline-block bg-secondary hover:bg-primary text-white font-semibold px-8 py-2 rounded-button text-lg   shadow transition">
+              Service anfordern
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+<main class="pt-24">
+<section class="w-full h-96 relative overflow-hidden">
+<div class="w-full h-full relative" style="background-image: url('https://readdy.ai/api/search-image?query=modern%20technology%20workspace%20with%20multiple%20computers%20and%20servers%20in%20a%20professional%20IT%20environment%2C%20clean%20blue%20and%20white%20color%20scheme%2C%20high%20tech%20atmosphere%2C%20perfect%20for%20computer%20sales%20banner%2C%20gradient%20overlay%20for%20text%20readability&width=1920&height=400&seq=verkauf_hero&orientation=landscape'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-primary bg-opacity-70"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="text-center text-white max-w-4xl mx-auto px-4">
+<h1 class="text-5xl font-bold mb-6">Aquado PC Konfigurator</h1>
+<p class="text-xl mb-12 text-blue-100">Konfigurieren Sie Ihren perfekten Computer nach Ihren individuellen Anforderungen</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+<a href="#business-pc" class="bg-white hover:bg-gray-50 text-primary px-6 py-4 !rounded-button font-semibold whitespace-nowrap flex items-center justify-center shadow-lg transform hover:scale-105 transition-all">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-briefcase-line"></i>
+</div>
+Business PC
+</a>
+<a href="#home-pc" class="bg-white hover:bg-gray-50 text-primary px-6 py-4 !rounded-button font-semibold whitespace-nowrap flex items-center justify-center shadow-lg transform hover:scale-105 transition-all">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-home-line"></i>
+</div>
+Home PC
+</a>
+<a href="#server" class="bg-white hover:bg-gray-50 text-primary px-6 py-4 !rounded-button font-semibold whitespace-nowrap flex items-center justify-center shadow-lg transform hover:scale-105 transition-all">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-server-line"></i>
+</div>
+Server
+</a>
+<a href="#notebook" class="bg-white hover:bg-gray-50 text-primary px-6 py-4 !rounded-button font-semibold whitespace-nowrap flex items-center justify-center shadow-lg transform hover:scale-105 transition-all">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-computer-line"></i>
+</div>
+Notebook
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-4xl font-bold text-gray-900 mb-8">Ihr Aquado Premium Service Partner</h2>
+<div class="prose prose-lg text-gray-600 space-y-6">
+<p>
+Wir sind ein IT-Fachunternehmen und bieten als <strong>Aquado Premium Service Partner</strong> ein breites IT-Systemprogramm mit speziellen Serviceleistungen und das bereits seit mehr als 10 Jahren. Von den Vorteilen der Aquado Produkte erfahren Sie hier.
+</p>
+<p>
+Zu unserem Angebot zählen individuelle Aquado IT-Systeme der Bereiche <strong>Business PCs</strong>, <strong>Home PCs</strong>, <strong>Notebooks</strong>, <strong>Server</strong> sowie <strong>Peripherie-Geräte</strong>. Weitere Computer Komponenten finden Sie in unserem Online Shop.
+</p>
+<p>
+Unseren <strong>PC- und Server Konfigurator</strong> finden Sie hier. Profitieren Sie von unserer langjährigen Erfahrung und lassen Sie sich von unserem Expertenteam beraten.
+</p>
+</div>
+<div class="mt-8 grid sm:grid-cols-2 gap-4">
+<div class="flex items-center p-4 bg-gray-50 rounded-lg">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-award-line text-secondary text-xl"></i>
+</div>
+</div>
+<div>
+<h3 class="font-semibold text-gray-900">Premium Partner</h3>
+<p class="text-sm text-gray-600">Zertifiziert seit 2013</p>
+</div>
+</div>
+<div class="flex items-center p-4 bg-gray-50 rounded-lg">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-customer-service-line text-secondary text-xl"></i>
+</div>
+</div>
+<div>
+<h3 class="font-semibold text-gray-900">Vollservice</h3>
+<p class="text-sm text-gray-600">Beratung bis Wartung</p>
+</div>
+</div>
+<div class="flex items-center p-4 bg-gray-50 rounded-lg">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-settings-line text-secondary text-xl"></i>
+</div>
+</div>
+<div>
+<h3 class="font-semibold text-gray-900">Individuell</h3>
+<p class="text-sm text-gray-600">Maßgeschneiderte Lösungen</p>
+</div>
+</div>
+<div class="flex items-center p-4 bg-gray-50 rounded-lg">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-time-line text-secondary text-xl"></i>
+</div>
+</div>
+<div>
+<h3 class="font-semibold text-gray-900">10+ Jahre</h3>
+<p class="text-sm text-gray-600">Erfahrung & Expertise</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center">
+<img src="https://readdy.ai/api/search-image?query=professional%20IT%20technician%20working%20with%20modern%20computer%20systems%20and%20servers%2C%20clean%20workspace%20with%20blue%20and%20white%20color%20scheme%2C%20technology%20focused%20environment%2C%20high%20quality%20professional%20photography%20style&width=600&height=400&seq=it_professional&orientation=landscape" alt="IT Professional" class="w-full max-w-lg rounded-xl shadow-lg object-cover">
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 text-center">
+<div class="bg-white rounded-2xl shadow-lg p-12 max-w-2xl mx-auto">
+<h3 class="text-2xl font-bold text-gray-900 mb-6">Aquado Premium Service Partner</h3>
+<div class="flex justify-center mb-8">
+<img src="assists/imgs/aq.jpeg" alt="Aquado Premium Service Partner Logo" class="max-w-sm w-full h-auto object-contain">
+</div>
+<p class="text-gray-600 text-lg leading-relaxed">
+Als zertifizierter Premium Service Partner bieten wir Ihnen höchste Qualitätsstandards, umfassende Garantieleistungen und professionellen Support für alle Aquado Produkte.
+</p>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-gray-900 mb-6">Unsere Produktkategorien</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+Entdecken Sie unser umfassendes Sortiment an hochwertigen IT-Systemen für jeden Bedarf
+</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+<div class="h-48 bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
+<img src="https://readdy.ai/api/search-image?query=modern%20business%20desktop%20computer%20with%20monitor%20keyboard%20and%20mouse%2C%20professional%20office%20setup%2C%20clean%20white%20background%2C%20high%20quality%20product%20photography%2C%20blue%20accents&width=300&height=200&seq=business_pc&orientation=landscape" alt="Business PC" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Business PCs</h3>
+<p class="text-gray-600 mb-4">Professionelle Arbeitsplätze für höchste Produktivität und Zuverlässigkeit im Geschäftsumfeld.</p>
+<a href="#business-pc" class="text-primary hover:text-primary/80 font-medium flex items-center">
+Mehr erfahren
+<div class="w-4 h-4 flex items-center justify-center ml-2">
+<i class="ri-arrow-right-line text-sm"></i>
+</div>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+<div class="h-48 bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center">
+<img src="https://readdy.ai/api/search-image?query=stylish%20home%20computer%20setup%20with%20gaming%20elements%2C%20RGB%20lighting%2C%20modern%20design%2C%20clean%20white%20background%2C%20high%20quality%20product%20photography%2C%20colorful%20accents&width=300&height=200&seq=home_pc&orientation=landscape" alt="Home PC" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Home PCs</h3>
+<p class="text-gray-600 mb-4">Vielseitige Computer für Entertainment, Gaming und private Anwendungen zu Hause.</p>
+<a href="#home-pc" class="text-primary hover:text-primary/80 font-medium flex items-center">
+Mehr erfahren
+<div class="w-4 h-4 flex items-center justify-center ml-2">
+<i class="ri-arrow-right-line text-sm"></i>
+</div>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+<div class="h-48 bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center">
+<img src="https://readdy.ai/api/search-image?query=professional%20server%20rack%20with%20multiple%20units%2C%20data%20center%20equipment%2C%20blue%20LED%20indicators%2C%20clean%20white%20background%2C%20high%20quality%20product%20photography%2C%20enterprise%20grade&width=300&height=200&seq=server&orientation=landscape" alt="Server" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Server</h3>
+<p class="text-gray-600 mb-4">Leistungsstarke Server-Lösungen für Unternehmen jeder Größe und Anforderung.</p>
+<a href="#server" class="text-primary hover:text-primary/80 font-medium flex items-center">
+Mehr erfahren
+<div class="w-4 h-4 flex items-center justify-center ml-2">
+<i class="ri-arrow-right-line text-sm"></i>
+</div>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+<div class="h-48 bg-gradient-to-br from-orange-50 to-orange-100 flex items-center justify-center">
+<img src="https://readdy.ai/api/search-image?query=premium%20modern%20laptop%20computer%20with%20sleek%20aluminum%20design%20displayed%20on%20minimalist%20white%20desk%2C%20professional%20business%20notebook%20with%20high-end%20finish%2C%20perfect%20product%20photography%20with%20soft%20lighting%20and%20reflections%2C%20clean%20white%20background%20with%20subtle%20shadows%2C%20ultra-high%20quality%20details&width=300&height=200&seq=notebook_premium&orientation=landscape" alt="Premium Business Notebook" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Notebooks</h3>
+<p class="text-gray-600 mb-4">Mobile Arbeitsplätze für Flexibilität und Produktivität unterwegs und im Büro.</p>
+<a href="#notebook" class="text-primary hover:text-primary/80 font-medium flex items-center">
+Mehr erfahren
+<div class="w-4 h-4 flex items-center justify-center ml-2">
+<i class="ri-arrow-right-line text-sm"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-primary text-white relative overflow-hidden">
+<div class="absolute inset-0">
+<img src="https://readdy.ai/api/search-image?query=modern%20abstract%20technology%20background%20with%20glowing%20blue%20circuit%20lines%20and%20digital%20network%20patterns%2C%20creating%20a%20sense%20of%20connectivity%20and%20innovation%2C%20perfect%20for%20IT%20services%20background%2C%20soft%20gradient%20overlay%20for%20text%20readability&width=1920&height=400&seq=cta_bg&orientation=landscape" alt="Technology Background" class="w-full h-full object-cover opacity-10">
+</div>
+<div class="max-w-7xl mx-auto px-4 text-center relative z-10">
+<h2 class="text-3xl font-bold mb-6">Bereit für Ihren neuen Computer?</h2>
+<p class="text-xl mb-8 text-blue-100 max-w-3xl mx-auto">
+Nutzen Sie unseren Konfigurator oder besuchen Sie unseren Online Shop für eine große Auswahl an Komponenten und Zubehör.
+</p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<a href="#online-shop" class="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 !rounded-button font-semibold whitespace-nowrap flex items-center justify-center shadow-lg transform hover:scale-105 transition-all">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-shopping-cart-line"></i>
+</div>
+Online Shop besuchen
+</a>
+
+</div>
+</div>
+</section>
+</main>
+      <footer class="bg-gray-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <div class="flex items-center mb-6">
+              <img
+                src="https://static.readdy.ai/image/3fbc212699fd94419ff9b65c079d4941/fc6c559962bb534d980c698712fcad61.png"
+                alt="potto.eu Logo"
+                class="h-12 w-auto object-contain"
+              />
+            </div>
+            <p class="text-gray-400 mb-6">
+              Seit 1997 Ihr vertrauensvoller Partner für professionelle
+              IT-Dienstleistungen in Mainz.
+            </p>
+            <div class="flex space-x-4">
+              <div
+                class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary cursor-pointer"
+              >
+                <i class="ri-facebook-line text-sm"></i>
+              </div>
+              <div
+                class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary cursor-pointer"
+              >
+                <i class="ri-twitter-x-line text-sm"></i>
+              </div>
+              <div
+                class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary cursor-pointer"
+              >
+                <i class="ri-linkedin-line text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Kontakt</h3>
+            <div class="space-y-4 text-gray-400">
+              <div class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mr-3 mt-0.5"
+                >
+                  <i class="ri-map-pin-line text-xs"></i>
+                </div>
+                <div>
+                  Musterstraße 123<br />
+                  55116 Mainz, Deutschland
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="ri-phone-line text-xs"></i>
+                </div>
+                <span>+49 6131 123456</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="ri-mail-line text-xs"></i>
+                </div>
+                <span>info@pc-verkauf.de</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Wichtige Links</h3>
+            <div class="space-y-3">
+              <a href="#home" class="block text-gray-400 hover:text-white"
+                >Home</a
+              >
+              <a href="#services" class="block text-gray-400 hover:text-white"
+                >Services</a
+              >
+              <a href="#contact" class="block text-gray-400 hover:text-white"
+                >Kontakt</a
+              >
+              <a href="#impressum" class="block text-gray-400 hover:text-white"
+                >Impressum</a
+              >
+              <a
+                href="#datenschutz"
+                class="block text-gray-400 hover:text-white"
+                >Datenschutz</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>
+            &copy; 2025 potto.eu - IT-Dienstleistungen Otto. Alle Rechte
+            vorbehalten.
+          </p>
+        </div>
+      </div>
+    </footer>
+<div id="impressum-page" class="hidden fixed inset-0 bg-white z-50 overflow-y-auto">
+<div class="min-h-screen">
+  <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+      <div class="bg-secondary text-white py-2">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
+    <div class="flex items-center space-x-6">
+      <div class="flex items-center">
+        <div class="w-4 h-4 flex items-center justify-center mr-2">
+          <i class="ri-phone-line text-xs"></i>
+        </div>
+        <span class=" max-[465px]:hidden">+49 6131 123456</span>
+      </div>
+      <div class="flex items-center">
+        <div class="w-4 h-4 flex items-center justify-center mr-2">
+          <i class="ri-mail-line text-xs"></i>
+        </div>
+        <span class="max-[465px]:hidden ">info@pc-verkauf.de</span>
+      </div>
+    </div>
+    <div class="flex items-center space-x-4 text-base">
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-facebook-line"></i>
+      </div>
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-twitter-x-line"></i> <!-- changed from twitter to x -->
+      </div>
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-linkedin-line"></i>
+      </div>
+    </div>
+  </div>
+</div>
+      <nav class="bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+              <div class="flex items-center">
+                <img
+                  src="https://static.readdy.ai/image/3fbc212699fd94419ff9b65c079d4941/d40f587ec862f25209d902517526dd8f.png"
+                  alt="potto.eu Logo"
+                  class="h-24 w-auto object-contain mr-3 py-6 px-3"
+                />
+              </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+              <a
+                href="index.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Home</a
+              >
+              <a
+                href="services.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Services</a
+              >
+              <a
+                href="Konakt.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Kontakt</a
+              >
+              <a
+                href="kauf.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Kauf</a
+              >
+              <a href="services.html#service-anf" class="inline-block bg-secondary hover:bg-primary text-white font-semibold px-8 py-2 rounded-button text-lg   shadow transition">
+              Service anfordern
+            </a>
+            </div>
+
+            <div class="md:hidden">
+              <button
+                id="mobile-menu-button"
+                class="w-8 h-8 flex items-center justify-center"
+              >
+                <i class="ri-menu-line text-xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      <div
+        
+          id="mobile-menu"
+          class="hidden md:hidden bg-white border-t border-gray-100"
+        >
+          <div class="px-4 py-2 space-y-1">
+            <a
+              href="index.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Services</a
+            >
+            <a
+              href="kauf.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Kauf</a
+            >
+            <a
+              href="Konakt.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Kontact</a
+            >
+                <a href="services.html#service-anf" class="inline-block bg-secondary hover:bg-primary text-white font-semibold px-8 py-2 rounded-button text-lg   shadow transition">
+              Service anfordern
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+<main class="max-w-4xl mx-auto px-4 py-12">
+<div class="prose prose-lg max-w-none">
+<h2>Angaben gemäß § 5 TMG</h2>
+<p>
+IT-Dienstleistungen Otto<br>
+PC-Verkauf.de<br>
+Musterstraße 123<br>
+55116 Mainz<br>
+Deutschland
+</p>
+<h3>Vertreten durch:</h3>
+<p>Otto Mustermann</p>
+<h3>Kontakt:</h3>
+<p>
+Telefon: +49 6131 123456<br>
+Fax: +49 6131 123457<br>
+E-Mail: info@pc-verkauf.de
+</p>
+<h3>Umsatzsteuer-ID:</h3>
+<p>
+Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz:<br>
+DE123456789
+</p>
+<h3>Wirtschafts-ID:</h3>
+<p>DE123456789</p>
+<h3>Aufsichtsbehörde:</h3>
+<p>
+Handwerkskammer Rheinhessen<br>
+Dagobertstraße 2<br>
+55116 Mainz
+</p>
+<h3>Berufsbezeichnung und berufsrechtliche Regelungen:</h3>
+<p>
+Berufsbezeichnung: IT-Systemelektroniker<br>
+Zuständige Kammer: Handwerkskammer Rheinhessen<br>
+Verliehen durch: Deutschland
+</p>
+<h2>Haftung für Inhalte</h2>
+<p>
+Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
+allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht
+unter der Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach
+Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+</p>
+<h2>Haftung für Links</h2>
+<p>
+Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben.
+Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten
+Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+</p>
+<h2>Urheberrecht</h2>
+<p>
+Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
+Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
+Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+</p>
+<h2>Datenschutz</h2>
+<p>
+Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf
+unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden,
+erfolgt dies, soweit möglich, stets auf freiwilliger Basis.
+</p>
+<p class="text-sm text-gray-500 mt-12">
+Stand: Januar 2024
+</p>
+</div>
+</main>
+</div>
+</div>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+});
+});
+</script>
+<script id="impressum-modal-script">
+document.addEventListener('DOMContentLoaded', function() {
+const impressumLinks = document.querySelectorAll('a[href="#impressum"]');
+const impressumPage = document.getElementById('impressum-page');
+const closeImpressum = document.getElementById('close-impressum');
+impressumLinks.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+impressumPage.classList.remove('hidden');
+document.body.style.overflow = 'hidden';
+});
+});
+closeImpressum.addEventListener('click', function() {
+impressumPage.classList.add('hidden');
+document.body.style.overflow = 'auto';
+});
+});
+</script>
+<script id="smooth-scroll-script">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+const href = this.getAttribute('href');
+if (href === '#impressum') return;
+e.preventDefault();
+const target = document.querySelector(href);
+if (target) {
+target.scrollIntoView({
+behavior: 'smooth',
+block: 'start'
+});
+}
+});
+});
+});
+</script>
+</body>
+</html>

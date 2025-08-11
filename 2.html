@@ -76,14 +76,14 @@ Reparatur, Netzwerke, Wartung & Internet-Lösungen. Schnelle Hilfe vor Ort & Rem
   #home > .container,
   #home > .max-w-7xl {
     display: flex !important;
-
+    flex-direction: column !important;
   }
 }
 
     </style>
   </head>
   <body class="bg-white ">
-    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+      <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
       <div class="bg-secondary text-white py-2">
   <div class="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
     <div class="flex items-center space-x-6">
@@ -162,7 +162,7 @@ Reparatur, Netzwerke, Wartung & Internet-Lösungen. Schnelle Hilfe vor Ort & Rem
             </div>
           </div>
         </div>
-        <div
+      <div
         
           id="mobile-menu"
           class="hidden md:hidden bg-white border-t border-gray-100"
@@ -196,12 +196,14 @@ Reparatur, Netzwerke, Wartung & Internet-Lösungen. Schnelle Hilfe vor Ort & Rem
       </nav>
     </header>
     <main class="pt-24">
-
-      <section id="home" class="relative  ] min-h-[600px] flex items-center justify-center flex-col py-12 md:py-0" style="background-image: linear-gradient(to top, #ffffff00 0%, #e5f9fff7 100%)">
-        <div class="max-w-7xl mx-auto w-full flex flex-col-reverse md:flex-row items-center justify-between px-4">
+      <section id="home" class="relative min-h-[600px]   items-center py-12 md:py-0 bg-no-repeat" style="background-image: linear-gradient(to bottom, #ffffff00 0%, #e5f9fff7 100%), url(assists/imgs/hero4.jpg);
+    background-size: 100% 100%, contain;
+    background-position: 0 0, right center;
+    background-size: cover;">
+        <div class="max-w-7xl mx-auto w-full   p-4">
           <!-- Left: Text + Benefits -->
-          <div class="w-full md:w-1/2 flex flex-col items-start">
-            <h1 class="text-4xl md:text-5xl font-bold text-primary mb-5">
+<div id="hero-left" class="w-full md:w-1/2 flex flex-col items-start mt-12">
+              <h1 class="text-4xl md:text-5xl font-bold text-primary mb-5">
               Ihr IT-Partner in Mainz &amp; Umgebung
             </h1>
             <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-xl">
@@ -210,14 +212,13 @@ Reparatur, Netzwerke, Wartung & Internet-Lösungen. Schnelle Hilfe vor Ort & Rem
             <a href="#contact" class="inline-block bg-secondary hover:bg-primary text-white font-semibold px-8 py-4 rounded-button text-lg mb-10 shadow transition">
               Jetzt kostenlos beraten lassen
             </a>
-        
-          </div>
+         
           <!-- Right: Image -->
           <div class="w-full md:w-1/2 flex justify-end mb-10 md:mb-0">
-            <img src="assists/imgs/hero.png" alt="IT-Techniker bei der Arbeit" class="">
+       <img src="assists/imgs/hero.png" alt="IT-Techniker bei der Arbeit" class="">
           </div>
         </div>
-            <div class="flex flex-col sm:flex-row gap-6 w-full max-w-7xl">
+           <div class="flex flex-col sm:flex-row gap-6 w-full">
               <!-- Benefit 1 -->
               <div class="flex items-center">
                 <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4">
@@ -249,8 +250,8 @@ Reparatur, Netzwerke, Wartung & Internet-Lösungen. Schnelle Hilfe vor Ort & Rem
                 </div>
               </div>
             </div>
+          </div>
       </section>
-
       <section id="services" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
           <div class="text-center mb-16">
@@ -367,7 +368,72 @@ Reparatur, Netzwerke, Wartung & Internet-Lösungen. Schnelle Hilfe vor Ort & Rem
           </div>
         </div>
       </section>
+      <!-- CLIENTS LOGOS -->
+      <section id="clients" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-gray-900">Vertrauen von unseren Kunden</h2>
+            <p class="text-gray-600">Eine Auswahl von Unternehmen, mit denen wir zusammenarbeiten</p>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
+            <!-- Replace data-name/src with real client logos when available -->
+            <div class="logo-item h-16 p-3 rounded-xl border border-gray-200 bg-white/80 flex items-center justify-center hover:shadow-sm transition" data-name="Kunde A">
+              <img data-logo src="assists/clients/kunde-a.svg" alt="Kunde A" class="h-10 sm:h-12 object-contain opacity-70" />
+            </div>
+            <div class="logo-item h-16 p-3 rounded-xl border border-gray-200 bg-white/80 flex items-center justify-center hover:shadow-sm transition" data-name="Kunde B">
+              <img data-logo src="assists/clients/kunde-b.svg" alt="Kunde B" class="h-10 sm:h-12 object-contain opacity-70" />
+            </div>
+            <div class="logo-item h-16 p-3 rounded-xl border border-gray-200 bg-white/80 flex items-center justify-center hover:shadow-sm transition" data-name="Kunde C">
+              <img data-logo src="assists/clients/kunde-c.svg" alt="Kunde C" class="h-10 sm:h-12 object-contain opacity-70" />
+            </div>
+            <div class="logo-item h-16 p-3 rounded-xl border border-gray-200 bg-white/80 flex items-center justify-center hover:shadow-sm transition" data-name="Kunde D">
+              <img data-logo src="assists/clients/kunde-d.svg" alt="Kunde D" class="h-10 sm:h-12 object-contain opacity-70" />
+            </div>
+            <div class="logo-item h-16 p-3 rounded-xl border border-gray-200 bg-white/80 flex items-center justify-center hover:shadow-sm transition" data-name="Kunde E">
+              <img data-logo src="assists/clients/kunde-e.svg" alt="Kunde E" class="h-10 sm:h-12 object-contain opacity-70" />
+            </div>
+            <div class="logo-item h-16 p-3 rounded-xl border border-gray-200 bg-white/80 flex items-center justify-center hover:shadow-sm transition" data-name="Kunde F">
+              <img data-logo src="assists/clients/kunde-f.svg" alt="Kunde F" class="h-10 sm:h-12 object-contain opacity-70" />
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- SUPPLIERS / HERSTELLER LOGOS -->
+      <section id="suppliers" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-gray-900">Unsere Hersteller & Lieferanten</h2>
+            <p class="text-gray-600">Originale Komponenten & Zubehör von führenden Marken</p>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-8 gap-6 items-center">
+            <div class="logo-item h-16 p-3 rounded-xl border border-gray-200 bg-white flex items-center justify-center" data-name="Apple">
+              <img data-logo src="assists/brands/apple.svg" alt="Apple" class="h-10 sm:h-12 object-contain opacity-80" />
+            </div>
+            <div class="logo-item h-16 p-3 rounded-xl border border-gray-200 bg-white flex items-center justify-center" data-name="Samsung">
+              <img data-logo src="assists/brands/samsung.svg" alt="Samsung" class="h-10 sm:h-12 object-contain opacity-80" />
+            </div>
+            <div class="logo-item h-16 p-3 rounded-xl border border-gray-200 bg-white flex items-center justify-center" data-name="Google">
+              <img data-logo src="assists/brands/google.svg" alt="Google" class="h-10 sm:h-12 object-contain opacity-80" />
+            </div>
+            <div class="logo-item h-16 p-3 rounded-xl border border-gray-200 bg-white flex items-center justify-center" data-name="Microsoft">
+              <img data-logo src="assists/brands/microsoft.svg" alt="Microsoft" class="h-10 sm:h-12 object-contain opacity-80" />
+            </div>
+            <div class="logo-item h-16 p-3 rounded-xl border border-gray-200 bg-white flex items-center justify-center" data-name="JBL">
+              <img data-logo src="assists/brands/jbl.svg" alt="JBL" class="h-10 sm:h-12 object-contain opacity-80" />
+            </div>
+            <div class="logo-item h-16 p-3 rounded-xl border border-gray-200 bg-white flex items-center justify-center" data-name="Lenovo">
+              <img data-logo src="assists/brands/lenovo.svg" alt="Lenovo" class="h-10 sm:h-12 object-contain opacity-80" />
+            </div>
+            <div class="logo-item h-16 p-3 rounded-xl border border-gray-200 bg-white flex items-center justify-center" data-name="HP">
+              <img data-logo src="assists/brands/hp.svg" alt="HP" class="h-10 sm:h-12 object-contain opacity-80" />
+            </div>
+            <div class="logo-item h-16 p-3 rounded-xl border border-gray-200 bg-white flex items-center justify-center" data-name="ASUS">
+              <img data-logo src="assists/brands/asus.svg" alt="ASUS" class="h-10 sm:h-12 object-contain opacity-80" />
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4">
           <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -709,13 +775,13 @@ Reparatur, Netzwerke, Wartung & Internet-Lösungen. Schnelle Hilfe vor Ort & Rem
           <div>
             <h3 class="text-lg font-semibold mb-6">Wichtige Links</h3>
             <div class="space-y-3">
-              <a href="index.html" class="block text-gray-400 hover:text-white"
+              <a href="#home" class="block text-gray-400 hover:text-white"
                 >Home</a
               >
-              <a href="services.html" class="block text-gray-400 hover:text-white"
+              <a href="#services" class="block text-gray-400 hover:text-white"
                 >Services</a
               >
-              <a href="kauf.html" class="block text-gray-400 hover:text-white"
+              <a href="#contact" class="block text-gray-400 hover:text-white"
                 >Kontakt</a
               >
               <a href="#impressum" class="block text-gray-400 hover:text-white"

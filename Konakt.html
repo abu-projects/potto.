@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>  potto.eu |  IT-Dienstleistungen in Mainz</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#202F57",
+                        secondary: "#2CB0DB",
+                    },
+                    borderRadius: {
+                        none: "0px",
+                        sm: "4px",
+                        DEFAULT: "8px",
+                        md: "12px",
+                        lg: "16px",
+                        xl: "20px",
+                        "2xl": "24px",
+                        "3xl": "32px",
+                        full: "9999px",
+                        button: "8px",
+                    },
+                    fontFamily: {
+                        sans: ["Poppins", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+      <div class="bg-secondary text-white py-2">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
+    <div class="flex items-center space-x-6">
+      <div class="flex items-center">
+        <div class="w-4 h-4 flex items-center justify-center mr-2">
+          <i class="ri-phone-line text-xs"></i>
+        </div>
+        <span class=" max-[465px]:hidden">+49 6131 123456</span>
+      </div>
+      <div class="flex items-center">
+        <div class="w-4 h-4 flex items-center justify-center mr-2">
+          <i class="ri-mail-line text-xs"></i>
+        </div>
+        <span class="max-[465px]:hidden ">info@pc-verkauf.de</span>
+      </div>
+    </div>
+    <div class="flex items-center space-x-4 text-base">
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-facebook-line"></i>
+      </div>
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-twitter-x-line"></i> <!-- changed from twitter to x -->
+      </div>
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-linkedin-line"></i>
+      </div>
+    </div>
+  </div>
+</div>
+      <nav class="bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+              <div class="flex items-center">
+                <img
+                  src="https://static.readdy.ai/image/3fbc212699fd94419ff9b65c079d4941/d40f587ec862f25209d902517526dd8f.png"
+                  alt="potto.eu Logo"
+                  class="h-24 w-auto object-contain mr-3 py-6 px-3"
+                />
+              </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+              <a
+                href="index.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Home</a
+              >
+              <a
+                href="services.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Services</a
+              >
+                <a
+                href="kauf.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Kauf</a
+              >
+              <a
+                href="Konakt.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Kontakt</a
+              >
+            
+              <a href="services.html#service-anf" class="inline-block bg-secondary hover:bg-primary text-white font-semibold px-8 py-2 rounded-button text-lg   shadow transition">
+              Service anfordern
+            </a>
+            </div>
+
+            <div class="md:hidden">
+              <button
+                id="mobile-menu-button"
+                class="w-8 h-8 flex items-center justify-center"
+              >
+                <i class="ri-menu-line text-xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      <div
+        
+          id="mobile-menu"
+          class="hidden md:hidden bg-white border-t border-gray-100"
+        >
+          <div class="px-4 py-2 space-y-1">
+            <a
+              href="index.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Services</a
+            >
+            <a
+              href="kauf.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Kauf</a
+            >
+            <a
+              href="Konakt.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Kontact</a
+            >
+                <a href="services.html#service-anf" class="inline-block bg-secondary hover:bg-primary text-white font-semibold px-8 py-2 rounded-button text-lg   shadow transition">
+              Service anfordern
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+<main class="pt-24">
+    <section class="w-full h-96 relative">
+        <div
+                class="w-full h-full bg-gray-200 relative overflow-hidden"
+                style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;"
+        >
+            <div class="absolute inset-0 bg-primary bg-opacity-20"></div>
+            <div
+                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            >
+                <div
+                        class="w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg"
+                >
+                    <div class="w-6 h-6 flex items-center justify-center">
+                        <i class="ri-map-pin-fill text-white text-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Kontakt</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Haben Sie Fragen oder benötigen Sie Unterstützung? Wir sind für
+                    Sie da und freuen uns auf Ihre Nachricht!
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-8">
+                        Kontaktinformationen
+                    </h2>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div
+                                    class="w-14 h-14 bg-secondary/10 rounded-lg flex items-center justify-center mr-6 flex-shrink-0"
+                            >
+                                <div class="w-6 h-6 flex items-center justify-center">
+                                    <i class="ri-map-pin-line text-secondary text-xl"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2 text-lg">
+                                    Geschäftsadresse
+                                </h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Musterstraße 123<br />
+                                    55116 Mainz<br />
+                                    Deutschland
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div
+                                    class="w-14 h-14 bg-secondary/10 rounded-lg flex items-center justify-center mr-6 flex-shrink-0"
+                            >
+                                <div class="w-6 h-6 flex items-center justify-center">
+                                    <i class="ri-phone-line text-secondary text-xl"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2 text-lg">
+                                    Telefon & Fax
+                                </h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Telefon: +49 6131 123456<br />
+                                    Fax: +49 6131 123457<br />
+                                    Notfall-Hotline: +49 6131 123458
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div
+                                    class="w-14 h-14 bg-secondary/10 rounded-lg flex items-center justify-center mr-6 flex-shrink-0"
+                            >
+                                <div class="w-6 h-6 flex items-center justify-center">
+                                    <i class="ri-mail-line text-secondary text-xl"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2 text-lg">
+                                    E-Mail Adressen
+                                </h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Allgemein: info@pc-verkauf.de<br />
+                                    Support: support@pc-verkauf.de<br />
+                                    Verkauf: verkauf@pc-verkauf.de
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div
+                                    class="w-14 h-14 bg-secondary/10 rounded-lg flex items-center justify-center mr-6 flex-shrink-0"
+                            >
+                                <div class="w-6 h-6 flex items-center justify-center">
+                                    <i class="ri-time-line text-secondary text-xl"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2 text-lg">
+                                    Öffnungszeiten
+                                </h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Montag - Freitag: 08:00 - 18:00 Uhr<br />
+                                    Samstag: 09:00 - 14:00 Uhr<br />
+                                    Sonntag: Geschlossen<br />
+                                    <span class="text-sm text-secondary font-medium"
+                                    >24/7 Notfall-Service verfügbar</span
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div
+                                    class="w-14 h-14 bg-secondary/10 rounded-lg flex items-center justify-center mr-6 flex-shrink-0"
+                            >
+                                <div class="w-6 h-6 flex items-center justify-center">
+                                    <i class="ri-car-line text-secondary text-xl"></i>
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-sm p-8">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-6">
+                        Nachricht senden
+                    </h2>
+                    <p class="text-gray-600 mb-8">
+                        Senden Sie uns eine Nachricht und wir melden uns
+                        schnellstmöglich bei Ihnen zurück.
+                    </p>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label
+                                        for="name"
+                                        class="block text-sm font-medium text-gray-700 mb-2"
+                                >Vor- und Nachname *</label
+                                >
+                                <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        required
+                                        placeholder="Max Mustermann"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                                />
+                            </div>
+                            <div>
+                                <label
+                                        for="email"
+                                        class="block text-sm font-medium text-gray-700 mb-2"
+                                >E-Mail Adresse *</label
+                                >
+                                <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        required
+                                        placeholder="max.mustermann@email.de"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                                />
+                            </div>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label
+                                        for="phone"
+                                        class="block text-sm font-medium text-gray-700 mb-2"
+                                >Telefonnummer</label
+                                >
+                                <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        placeholder="+49 123 456789"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                                />
+                            </div>
+                            <div>
+                                <label
+                                        for="company"
+                                        class="block text-sm font-medium text-gray-700 mb-2"
+                                >Unternehmen</label
+                                >
+                                <input
+                                        type="text"
+                                        id="company"
+                                        name="company"
+                                        placeholder="Firma GmbH"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <label
+                                    for="subject"
+                                    class="block text-sm font-medium text-gray-700 mb-2"
+                            >Betreff *</label
+                            >
+                            <div class="relative">
+                                <select
+                                        id="subject"
+                                        name="subject"
+                                        required
+                                        class="w-full px-4 py-3 pr-8 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm appearance-none bg-white"
+                                >
+                                    <option value="">Bitte wählen Sie einen Betreff</option>
+                                    <option value="allgemeine-anfrage">
+                                        Allgemeine Anfrage
+                                    </option>
+                                    <option value="reparatur">Computer Reparatur</option>
+                                    <option value="wartung">Wartung & Service</option>
+                                    <option value="beratung">IT-Beratung</option>
+                                    <option value="hardware-upgrade">Hardware Upgrade</option>
+                                    <option value="sicherheit">IT-Sicherheit</option>
+                                    <option value="notfall">Notfall-Support</option>
+                                    <option value="sonstiges">Sonstiges</option>
+                                </select>
+                                <div
+                                        class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none"
+                                >
+                                    <div class="w-5 h-5 flex items-center justify-center">
+                                        <i class="ri-arrow-down-s-line text-gray-400"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label
+                                    for="priority"
+                                    class="block text-sm font-medium text-gray-700 mb-2"
+                            >Priorität</label
+                            >
+                            <div class="flex space-x-4">
+                                <label class="flex items-center">
+                                    <input
+                                            type="radio"
+                                            name="priority"
+                                            value="niedrig"
+                                            checked
+                                            class="sr-only"
+                                    />
+                                    <div
+                                            class="priority-radio w-5 h-5 border-2 border-gray-300 rounded-full mr-2 flex items-center justify-center cursor-pointer"
+                                    >
+                                        <div
+                                                class="w-2.5 h-2.5 bg-primary rounded-full opacity-0 transition-opacity"
+                                        ></div>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Niedrig</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input
+                                            type="radio"
+                                            name="priority"
+                                            value="normal"
+                                            class="sr-only"
+                                    />
+                                    <div
+                                            class="priority-radio w-5 h-5 border-2 border-gray-300 rounded-full mr-2 flex items-center justify-center cursor-pointer"
+                                    >
+                                        <div
+                                                class="w-2.5 h-2.5 bg-primary rounded-full opacity-0 transition-opacity"
+                                        ></div>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Normal</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input
+                                            type="radio"
+                                            name="priority"
+                                            value="hoch"
+                                            class="sr-only"
+                                    />
+                                    <div
+                                            class="priority-radio w-5 h-5 border-2 border-gray-300 rounded-full mr-2 flex items-center justify-center cursor-pointer"
+                                    >
+                                        <div
+                                                class="w-2.5 h-2.5 bg-primary rounded-full opacity-0 transition-opacity"
+                                        ></div>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Hoch</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input
+                                            type="radio"
+                                            name="priority"
+                                            value="dringend"
+                                            class="sr-only"
+                                    />
+                                    <div
+                                            class="priority-radio w-5 h-5 border-2 border-red-500 rounded-full mr-2 flex items-center justify-center cursor-pointer"
+                                    >
+                                        <div
+                                                class="w-2.5 h-2.5 bg-red-500 rounded-full opacity-0 transition-opacity"
+                                        ></div>
+                                    </div>
+                                    <span class="text-sm text-red-600 font-medium"
+                                    >Dringend</span
+                                    >
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <label
+                                    for="message"
+                                    class="block text-sm font-medium text-gray-700 mb-2"
+                            >Ihre Nachricht *</label
+                            >
+                            <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="6"
+                                    required
+                                    placeholder="Beschreiben Sie bitte Ihr Anliegen oder Problem..."
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm resize-vertical"
+                            ></textarea>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5 mt-1">
+                                    <input
+                                            id="newsletter"
+                                            name="newsletter"
+                                            type="checkbox"
+                                            class="sr-only"
+                                    />
+                                    <div
+                                            class="newsletter-checkbox w-5 h-5 border-2 border-gray-300 rounded flex items-center justify-center cursor-pointer"
+                                    >
+                                        <div class="w-3 h-3 flex items-center justify-center">
+                                            <i
+                                                    class="ri-check-line text-white text-xs opacity-0 transition-opacity"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ml-3 text-sm">
+                                    <label
+                                            for="newsletter"
+                                            class="text-gray-700 cursor-pointer"
+                                    >
+                                        Ich möchte gelegentlich Informationen über neue Services
+                                        und Angebote erhalten.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5 mt-1">
+                                    <input
+                                            id="privacy"
+                                            name="privacy"
+                                            type="checkbox"
+                                            required
+                                            class="sr-only"
+                                    />
+                                    <div
+                                            class="privacy-checkbox w-5 h-5 border-2 border-gray-300 rounded flex items-center justify-center cursor-pointer"
+                                    >
+                                        <div class="w-3 h-3 flex items-center justify-center">
+                                            <i
+                                                    class="ri-check-line text-white text-xs opacity-0 transition-opacity"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ml-3 text-sm">
+                                    <label for="privacy" class="text-gray-700 cursor-pointer">
+                                        Ich stimme der Verarbeitung meiner Daten gemäß der
+                                        <a
+                                                href="#impressum"
+                                                class="text-primary hover:underline font-medium"
+                                        >Datenschutzerklärung</a
+                                        >
+                                        zu. *
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button
+                                    type="submit"
+                                    class="flex-1 bg-secondary hover:bg-primary/90 text-white py-3 px-6 !rounded-button font-semibold whitespace-nowrap flex items-center justify-center"
+                            >
+                                <div class="w-5 h-5 flex items-center justify-center mr-2">
+                                    <i class="ri-send-plane-line"></i>
+                                </div>
+                                Nachricht senden
+                            </button>
+                            <button
+                                    type="reset"
+                                    class="flex-1 sm:flex-none border-2 border-gray-300 text-gray-700 hover:bg-gray-50 py-3 px-6 !rounded-button font-semibold whitespace-nowrap"
+                            >
+                                Zurücksetzen
+                            </button>
+                        </div>
+                    </form>
+                    <div
+                            id="success-message"
+                            class="hidden mt-6 p-4 bg-green-50 border border-green-200 rounded-lg"
+                    >
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                <i class="ri-check-circle-line text-green-600"></i>
+                            </div>
+                            <p class="text-green-800 font-medium">
+                                Vielen Dank für Ihre Nachricht! Wir werden uns
+                                schnellstmöglich bei Ihnen melden.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-primary text-white relative overflow-hidden">
+        <div class="absolute inset-0">
+            <img
+                    src="https://readdy.ai/api/search-image?query=modern%20abstract%20technology%20background%20with%20glowing%20blue%20circuit%20lines%20and%20digital%20network%20patterns%2C%20creating%20a%20sense%20of%20connectivity%20and%20innovation%2C%20perfect%20for%20IT%20services%20background%2C%20soft%20gradient%20overlay%20for%20text%20readability&width=1920&height=400&seq=emergency_bg&orientation=landscape"
+                    alt="Emergency Service Background"
+                    class="w-full h-full object-cover opacity-10"
+            />
+        </div>
+        <div class="max-w-7xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-3xl font-bold mb-6">Brauchen Sie sofortige Hilfe?</h2>
+            <p class="text-xl mb-8 text-blue-100">
+                Unser 24/7 Notfall-Service steht Ihnen bei kritischen IT-Problemen
+                zur Verfügung.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                        href="tel:+496131123458"
+                        class="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 !rounded-button font-semibold whitespace-nowrap flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform"
+                >
+                    <div class="w-5 h-5 flex items-center justify-center mr-2">
+                        <i class="ri-phone-line"></i>
+                    </div>
+                    Notfall-Hotline anrufen
+                </a>
+                <a
+                        href="mailto:support@pc-verkauf.de"
+                        class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 !rounded-button font-semibold whitespace-nowrap flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform"
+                >
+                    <div class="w-5 h-5 flex items-center justify-center mr-2">
+                        <i class="ri-mail-line"></i>
+                    </div>
+                    Sofort E-Mail senden
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+      <footer class="bg-gray-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <div class="flex items-center mb-6">
+              <img
+                src="https://static.readdy.ai/image/3fbc212699fd94419ff9b65c079d4941/fc6c559962bb534d980c698712fcad61.png"
+                alt="potto.eu Logo"
+                class="h-12 w-auto object-contain"
+              />
+            </div>
+            <p class="text-gray-400 mb-6">
+              Seit 1997 Ihr vertrauensvoller Partner für professionelle
+              IT-Dienstleistungen in Mainz.
+            </p>
+            <div class="flex space-x-4">
+              <div
+                class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary cursor-pointer"
+              >
+                <i class="ri-facebook-line text-sm"></i>
+              </div>
+              <div
+                class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary cursor-pointer"
+              >
+                <i class="ri-twitter-x-line text-sm"></i>
+              </div>
+              <div
+                class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary cursor-pointer"
+              >
+                <i class="ri-linkedin-line text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Kontakt</h3>
+            <div class="space-y-4 text-gray-400">
+              <div class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mr-3 mt-0.5"
+                >
+                  <i class="ri-map-pin-line text-xs"></i>
+                </div>
+                <div>
+                  Musterstraße 123<br />
+                  55116 Mainz, Deutschland
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="ri-phone-line text-xs"></i>
+                </div>
+                <span>+49 6131 123456</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="ri-mail-line text-xs"></i>
+                </div>
+                <span>info@pc-verkauf.de</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Wichtige Links</h3>
+            <div class="space-y-3">
+              <a href="#home" class="block text-gray-400 hover:text-white"
+                >Home</a
+              >
+              <a href="#services" class="block text-gray-400 hover:text-white"
+                >Services</a
+              >
+              <a href="#contact" class="block text-gray-400 hover:text-white"
+                >Kontakt</a
+              >
+              <a href="#impressum" class="block text-gray-400 hover:text-white"
+                >Impressum</a
+              >
+              <a
+                href="#datenschutz"
+                class="block text-gray-400 hover:text-white"
+                >Datenschutz</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>
+            &copy; 2025 potto.eu - IT-Dienstleistungen Otto. Alle Rechte
+            vorbehalten.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div
+
+        id="impressum-page"
+        class="hidden fixed inset-0 bg-white z-50 overflow-y-auto"
+>
+    <div class="min-h-screen">
+        <header class="bg-white shadow-sm">
+            <div
+                    class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center"
+            >
+                <h1 class="text-2xl font-bold text-gray-900">Impressum</h1>
+                <button
+                        id="close-impressum"
+                        class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-700"
+                >
+                    <i class="ri-close-line text-xl"></i>
+                </button>
+            </div>
+        </header>
+        <main class="max-w-4xl mx-auto px-4 py-12">
+            <div class="prose prose-lg max-w-none">
+                <h2>Angaben gemäß § 5 TMG</h2>
+                <p>
+                    IT-Dienstleistungen Otto<br />
+                    PC-Verkauf.de<br />
+                    Musterstraße 123<br />
+                    55116 Mainz<br />
+                    Deutschland
+                </p>
+                <h3>Vertreten durch:</h3>
+                <p>Otto Mustermann</p>
+                <h3>Kontakt:</h3>
+                <p>
+                    Telefon: +49 6131 123456<br />
+                    Fax: +49 6131 123457<br />
+                    E-Mail: info@pc-verkauf.de
+                </p>
+                <h3>Umsatzsteuer-ID:</h3>
+                <p>
+                    Umsatzsteuer-Identifikationsnummer gemäß §27a
+                    Umsatzsteuergesetz:<br />
+                    DE123456789
+                </p>
+                <h3>Wirtschafts-ID:</h3>
+                <p>DE123456789</p>
+                <h3>Aufsichtsbehörde:</h3>
+                <p>
+                    Handwerkskammer Rheinhessen<br />
+                    Dagobertstraße 2<br />
+                    55116 Mainz
+                </p>
+                <h3>Berufsbezeichnung und berufsrechtliche Regelungen:</h3>
+                <p>
+                    Berufsbezeichnung: IT-Systemelektroniker<br />
+                    Zuständige Kammer: Handwerkskammer Rheinhessen<br />
+                    Verliehen durch: Deutschland
+                </p>
+                <h2>Haftung für Inhalte</h2>
+                <p>
+                    Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene
+                    Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
+                    verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter
+                    jedoch nicht unter der Verpflichtung, übermittelte oder
+                    gespeicherte fremde Informationen zu überwachen oder nach
+                    Umständen zu forschen, die auf eine rechtswidrige Tätigkeit
+                    hinweisen.
+                </p>
+                <h2>Haftung für Links</h2>
+                <p>
+                    Unser Angebot enthält Links zu externen Websites Dritter, auf
+                    deren Inhalte wir keinen Einfluss haben. Deshalb können wir für
+                    diese fremden Inhalte auch keine Gewähr übernehmen. Für die
+                    Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
+                    oder Betreiber der Seiten verantwortlich.
+                </p>
+                <h2>Urheberrecht</h2>
+                <p>
+                    Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
+                    diesen Seiten unterliegen dem deutschen Urheberrecht. Die
+                    Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
+                    Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
+                    schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+                </p>
+                <h2>Datenschutz</h2>
+                <p>
+                    Die Nutzung unserer Webseite ist in der Regel ohne Angabe
+                    personenbezogener Daten möglich. Soweit auf unseren Seiten
+                    personenbezogene Daten (beispielsweise Name, Anschrift oder
+                    E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich,
+                    stets auf freiwilliger Basis.
+                </p>
+                <p class="text-sm text-gray-500 mt-12">Stand: Januar 2024</p>
+            </div>
+        </main>
+    </div>
+</div>
+<script id="mobile-menu-script">
+    document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenuButton.addEventListener("click", function () {
+            mobileMenu.classList.toggle("hidden");
+        });
+    });
+</script>
+<script id="impressum-modal-script">
+    document.addEventListener("DOMContentLoaded", function () {
+        const impressumLinks = document.querySelectorAll('a[href="#impressum"]');
+        const impressumPage = document.getElementById("impressum-page");
+        const closeImpressum = document.getElementById("close-impressum");
+        impressumLinks.forEach((link) => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+                impressumPage.classList.remove("hidden");
+                document.body.style.overflow = "hidden";
+            });
+        });
+        closeImpressum.addEventListener("click", function () {
+            impressumPage.classList.add("hidden");
+            document.body.style.overflow = "auto";
+        });
+    });
+</script>
+<script id="custom-form-controls-script">
+    document.addEventListener("DOMContentLoaded", function () {
+        const radioButtons = document.querySelectorAll('input[type="radio"]');
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        radioButtons.forEach((radio) => {
+            const customRadio = radio.nextElementSibling;
+            const dot = customRadio.querySelector("div");
+            radio.addEventListener("change", function () {
+                document.querySelectorAll(`input[name="${this.name}"]`).forEach((r) => {
+                    const customR = r.nextElementSibling;
+                    const dotR = customR.querySelector("div");
+                    if (r === this) {
+                        customR.classList.add("border-primary");
+                        dotR.classList.add("opacity-100");
+                    } else {
+                        customR.classList.remove("border-primary");
+                        dotR.classList.remove("opacity-100");
+                    }
+                });
+            });
+            if (radio.checked) {
+                customRadio.classList.add("border-primary");
+                dot.classList.add("opacity-100");
+            }
+        });
+        checkboxes.forEach((checkbox) => {
+            const customCheckbox = checkbox.nextElementSibling;
+            const icon = customCheckbox.querySelector("i");
+            checkbox.addEventListener("change", function () {
+                if (this.checked) {
+                    customCheckbox.classList.add("bg-primary", "border-primary");
+                    customCheckbox.classList.remove("border-gray-300");
+                    icon.classList.add("opacity-100");
+                } else {
+                    customCheckbox.classList.remove("bg-primary", "border-primary");
+                    customCheckbox.classList.add("border-gray-300");
+                    icon.classList.remove("opacity-100");
+                }
+            });
+        });
+    });
+</script>
+<script id="contact-form-script">
+    document.addEventListener("DOMContentLoaded", function () {
+        const contactForm = document.getElementById("contact-form");
+        const successMessage = document.getElementById("success-message");
+        contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const formData = new FormData(contactForm);
+            const data = Object.fromEntries(formData);
+            successMessage.classList.remove("hidden");
+            contactForm.reset();
+            document.querySelectorAll(".priority-radio").forEach((radio) => {
+                radio.classList.remove("border-primary");
+                radio.querySelector("div").classList.remove("opacity-100");
+            });
+            document.querySelector(".priority-radio").classList.add("border-primary");
+            document.querySelector(".priority-radio div").classList.add("opacity-100");
+            document
+                .querySelectorAll(".newsletter-checkbox, .privacy-checkbox")
+                .forEach((checkbox) => {
+                    checkbox.classList.remove("bg-primary", "border-primary");
+                    checkbox.classList.add("border-gray-300");
+                    checkbox.querySelector("i").classList.remove("opacity-100");
+                });
+            setTimeout(() => {
+                successMessage.classList.add("hidden");
+            }, 5000);
+        });
+    });
+</script>
+<script id="smooth-scroll-script">
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll('a[href^="#"]');
+        links.forEach((link) => {
+            link.addEventListener("click", function (e) {
+                const href = this.getAttribute("href");
+                if (href === "#impressum") return;
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

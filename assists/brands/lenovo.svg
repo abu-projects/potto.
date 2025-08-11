@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100">
+  <rect width="200" height="100" fill="none"/>
+  <path d="M40,40h120v20H40V40z" fill="#E60012"/>
+  <path d="M45,45h110v10H45V45z" fill="#FFFFFF"/>
+  <text x="100" y="55" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#E60012">LENOVO</text>
+</svg>
