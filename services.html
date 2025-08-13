@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services - potto.eu - IT-Dienstleistungen Otto</title>
+       <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assists/imgs/favicon.png">
+  <link rel="apple-touch-icon" href="assets/imgs/favicon.png">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,47 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-      font-family: 'Poppins', sans-serif;
-      }
-    </style>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
     />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#202F57",
-              secondary: "#2CB0DB",
-            },
-            borderRadius: {
-              none: "0px",
-              sm: "4px",
-              DEFAULT: "8px",
-              md: "12px",
-              lg: "16px",
-              xl: "20px",
-              "2xl": "24px",
-              "3xl": "32px",
-              full: "9999px",
-              button: "8px",
-            },
-            fontFamily: {
-              sans: ["Poppins", "sans-serif"],
-            },
-          },
-        },
-      };
-    </script>
-    <style>
-      :where([class^="ri-"])::before {
-      content: "\f3c2";
-      }
-    </style>
+    <link rel="stylesheet" href="assists/custom.css" />
+    <script src="assists/custom.js"></script>
   </head>
   <body class="bg-white">
     <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
@@ -1024,7 +992,7 @@
       </div>
     </div>
 
-    <script id="back-to-top-script">
+    <!-- Script moved to custom.js
       document.addEventListener('DOMContentLoaded', function() {
         const backToTop = document.getElementById('back-to-top');
         window.addEventListener('scroll', function() {
@@ -1043,9 +1011,9 @@
           });
         });
       });
-    </script>
+    -->
 
-    <script id="mobile-menu-script">
+    <!-- Script moved to custom.js
       document.addEventListener("DOMContentLoaded", function () {
         const mobileMenuButton = document.getElementById("mobile-menu-button");
         const mobileMenu = document.getElementById("mobile-menu");
@@ -1053,8 +1021,8 @@
           mobileMenu.classList.toggle("hidden");
         });
       });
-    </script>
-    <script id="impressum-modal-script">
+    -->
+    <!-- Script moved to custom.js
       document.addEventListener("DOMContentLoaded", function () {
         const impressumLinks = document.querySelectorAll('a[href="#impressum"]');
         const impressumPage = document.getElementById("impressum-page");
@@ -1071,8 +1039,8 @@
           document.body.style.overflow = "auto";
         });
       });
-    </script>
-    <script id="service-dropdown-script">
+    -->
+    <!-- Script moved to custom.js
       document.addEventListener("DOMContentLoaded", function () {
         const serviceDropdown = document.getElementById("service-dropdown");
         const serviceOptions = document.getElementById("service-options");
@@ -1100,8 +1068,8 @@
           }
         });
       });
-    </script>
-    <script id="service-form-script">
+    -->
+    <!-- Script moved to custom.js
       document.addEventListener("DOMContentLoaded", function () {
         const serviceForm = document.getElementById("service-form");
         serviceForm.addEventListener("submit", function (e) {
@@ -1117,8 +1085,8 @@
           document.getElementById("service-type").value = "";
         });
       });
-    </script>
-    <script id="smooth-scroll-script">
+    -->
+    <!-- Script moved to custom.js
       document.addEventListener("DOMContentLoaded", function () {
         const links = document.querySelectorAll('a[href^="#"]');
         links.forEach((link) => {
@@ -1136,6 +1104,6 @@
           });
         });
       });
-    </script>
+    -->
   </body>
 </html>

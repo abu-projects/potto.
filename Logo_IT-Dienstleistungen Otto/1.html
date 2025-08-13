@@ -15,35 +15,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
     />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#0066cc",
-              secondary: "#00a5e5",
-            },
-            borderRadius: {
-              none: "0px",
-              sm: "4px",
-              DEFAULT: "8px",
-              md: "12px",
-              lg: "16px",
-              xl: "20px",
-              "2xl": "24px",
-              "3xl": "32px",
-              full: "9999px",
-              button: "8px",
-            },
-          },
-        },
-      };
-    </script>
-    <style>
-      :where([class^="ri-"])::before {
-      content: "\f3c2";
-      }
-    </style>
+    <link rel="stylesheet" href="assists/custom.css" />
+    <script src="assists/custom.js"></script>
   </head>
   <body class="bg-white">
     <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">

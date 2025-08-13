@@ -1,0 +1,32 @@
+/* Custom CSS for potto.eu website */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+:where([class^="ri-"])::before {
+  content: "\f3c2";
+}
+
+/* Hero responsive styles */
+@media (max-width: 992px) {
+  #home {
+    background-image: linear-gradient(to bottom, #ffffff00 0%, #e5f9fff7 100%) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  /* Force hero-left column to full width */
+  #hero-left {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-basis: 100% !important;
+  }
+
+  /* Stack columns vertically in reverse order on small screens */
+  #home > .container,
+  #home > .max-w-7xl {
+    display: flex !important;
+  }
+}
