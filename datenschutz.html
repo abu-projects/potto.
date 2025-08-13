@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datenschutzerklärung - potto.eu</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Poppins', sans-serif;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#202F57',
+secondary: '#2CB0DB'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+},
+fontFamily: {
+'sans': ['Poppins', 'sans-serif']
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+html {
+scroll-behavior: smooth;
+}
+</style>
+</head>
+<body class="bg-white">
+       <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+      <div class="bg-secondary text-white py-2">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
+    <div class="flex items-center space-x-6">
+      <div class="flex items-center">
+        <div class="w-4 h-4 flex items-center justify-center mr-2">
+          <i class="ri-phone-line text-xs"></i>
+        </div>
+        <span class=" max-[465px]:hidden">+49 6131 123456</span>
+      </div>
+      <div class="flex items-center">
+        <div class="w-4 h-4 flex items-center justify-center mr-2">
+          <i class="ri-mail-line text-xs"></i>
+        </div>
+        <span class="max-[465px]:hidden ">info@potto.eu</span>
+      </div>
+    </div>
+    <div class="flex items-center space-x-4 text-base">
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-facebook-line"></i>
+      </div>
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-twitter-x-line"></i> <!-- changed from twitter to x -->
+      </div>
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-linkedin-line"></i>
+      </div>
+    </div>
+  </div>
+</div>
+      <nav class="bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+              <div class="flex items-center">
+             <a href="index.html">    <img
+                  src="assists/imgs/logo1.png"
+                  alt="potto.eu Logo"
+                  class="h-24 w-auto object-contain mr-3 py-6 px-3"
+                /></a>
+              </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+              <a
+                href="index.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Home</a
+              >
+              <a
+                href="services.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Services</a
+              >
+                <a
+                href="kauf.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Verkauf</a
+              >
+              <a
+                href="Konakt.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Kontakt</a
+              >
+            
+              <a href="services.html#service-anf" class="inline-block bg-secondary hover:bg-primary text-white font-semibold px-8 py-2 rounded-button text-lg   shadow transition">
+              Service anfordern
+            </a>
+            </div>
+
+            <div class="md:hidden">
+              <button
+                id="mobile-menu-button"
+                class="w-8 h-8 flex items-center justify-center"
+              >
+                <i class="ri-menu-line text-xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+        
+          id="mobile-menu"
+          class="hidden md:hidden bg-white border-t border-gray-100"
+        >
+          <div class="px-4 py-2 space-y-1">
+            <a
+              href="index.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Services</a
+            >
+            <a
+              href="kauf.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Verkauf</a
+            >
+            <a
+              href="Konakt.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Kontact</a
+            >
+                <a href="services.html#service-anf" class="inline-block bg-secondary hover:bg-primary text-white font-semibold px-8 py-2 rounded-button text-lg   shadow transition">
+              Service anfordern
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+<main class="pt-24">
+<section class="py-16 bg-gradient-to-br from-primary to-primary/90">
+<div class="max-w-7xl mx-auto px-4 text-center">
+<h1 class="text-4xl font-bold text-white mb-6">Datenschutzerklärung</h1>
+<p class="text-xl text-white max-w-3xl mx-auto">
+Transparenz und Vertrauen sind die Grundlage unserer Geschäftsbeziehung. Hier erfahren Sie, wie wir Ihre persönlichen Daten verarbeiten und schützen.
+</p>
+</div>
+</section>
+
+<section id="einleitung" class="py-16 bg-white">
+<div class="max-w-4xl mx-auto px-4">
+<div class="bg-blue-50 border-l-4 border-secondary p-6 rounded-lg mb-8">
+<h2 class="text-2xl font-bold text-gray-900 mb-4">1. Verantwortliche Stelle</h2>
+<div class="space-y-3 text-gray-700">
+<p><strong>potto.eu - IT-Dienstleistungen Otto</strong></p>
+<p>Musterstraße 123<br>55116 Mainz, Deutschland</p>
+<p><strong>Telefon:</strong> +49 6131 123456</p>
+<p><strong>E-Mail:</strong> info@potto.eu</p>
+<p><strong>Geschäftsführer:</strong> Thomas Otto</p>
+<p><strong>Handelsregister:</strong> HRB 12345, Amtsgericht Mainz</p>
+</div>
+</div>
+
+<div class="prose max-w-none">
+<p class="text-gray-600 mb-6">
+Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepräsenzen auf. Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. "Verarbeitung" oder "Verantwortlicher" verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).
+</p>
+</div>
+</div>
+</section>
+
+<section id="datenerhebung" class="py-16 bg-gray-50">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="text-2xl font-bold text-gray-900 mb-8">2. Erhebung und Speicherung personenbezogener Daten</h2>
+<div class="space-y-8">
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-4">2.1 Website-Besuch</h3>
+<p class="text-gray-600 mb-4">
+Bei jedem Aufruf unserer Website werden durch Ihren Webbrowser automatisch Informationen an den Server unserer Website gesendet. Diese Informationen werden temporär in einem sogenannten Logfile gespeichert:
+</p>
+<ul class="list-disc list-inside text-gray-600 space-y-2">
+<li>IP-Adresse des anfragenden Rechners</li>
+<li>Datum und Uhrzeit des Zugriffs</li>
+<li>Name und URL der abgerufenen Datei</li>
+<li>Website, von der aus der Zugriff erfolgt (Referrer-URL)</li>
+<li>Verwendeter Browser und ggf. das Betriebssystem Ihres Rechners</li>
+<li>Name Ihres Access-Providers</li>
+</ul>
+</div>
+
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-4">2.2 Kontaktformular und E-Mail-Kontakt</h3>
+<p class="text-gray-600 mb-4">
+Bei der Nutzung unseres Kontaktformulars oder bei direktem E-Mail-Kontakt erheben wir folgende Daten:
+</p>
+<ul class="list-disc list-inside text-gray-600 space-y-2">
+<li>Vor- und Nachname</li>
+<li>Unternehmen (falls angegeben)</li>
+<li>E-Mail-Adresse</li>
+<li>Telefonnummer (optional)</li>
+<li>Nachrichteninhalt</li>
+<li>Zeitpunkt der Anfrage</li>
+</ul>
+</div>
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-4">2.3 Auftragsabwicklung</h3>
+<p class="text-gray-600 mb-4">
+Für die Abwicklung von IT-Services, Reparaturen und Verkäufen erheben wir:
+</p>
+<ul class="list-disc list-inside text-gray-600 space-y-2">
+<li>Vollständige Kontaktdaten (Name, Adresse, Telefon, E-Mail)</li>
+<li>Rechnungsadresse und ggf. abweichende Lieferadresse</li>
+<li>Zahlungsinformationen (Bankverbindung, Kreditkartendaten)</li>
+<li>Auftragsdaten und Serviceverlauf</li>
+<li>Technische Daten der zu wartenden Systeme</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="zweck" class="py-16 bg-white">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="text-2xl font-bold text-gray-900 mb-8">3. Zweck der Datenverarbeitung</h2>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="bg-gray-50 rounded-lg p-6">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-customer-service-line text-secondary text-lg"></i>
+</div>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Kundenkommunikation</h3>
+<p class="text-gray-600 text-sm">
+Bearbeitung von Anfragen, Beratung, technischer Support und allgemeine Geschäftskommunikation.
+</p>
+</div>
+
+<div class="bg-gray-50 rounded-lg p-6">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-tools-line text-secondary text-lg"></i>
+</div>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Servicebereitstellung</h3>
+<p class="text-gray-600 text-sm">
+Durchführung von IT-Services, Reparaturen, Wartungen und technischen Dienstleistungen.
+</p>
+</div>
+<div class="bg-gray-50 rounded-lg p-6">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-file-text-line text-secondary text-lg"></i>
+</div>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Vertragsabwicklung</h3>
+<p class="text-gray-600 text-sm">
+Abwicklung von Kaufverträgen, Serviceverträgen und Rechnungsstellung.
+</p>
+</div>
+
+<div class="bg-gray-50 rounded-lg p-6">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-shield-check-line text-secondary text-lg"></i>
+</div>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Rechtliche Verpflichtungen</h3>
+<p class="text-gray-600 text-sm">
+Erfüllung gesetzlicher Aufbewahrungspflichten und steuerrechtlicher Anforderungen.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="rechtsgrundlagen" class="py-16 bg-gray-50">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="text-2xl font-bold text-gray-900 mb-8">4. Rechtsgrundlagen gemäß Art. 6 DSGVO</h2>
+<div class="space-y-6">
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Art. 6 Abs. 1 lit. a DSGVO - Einwilligung</h3>
+<p class="text-gray-600">
+Verarbeitung auf Basis Ihrer ausdrücklichen Einwilligung, z.B. für Newsletter oder Marketing-Kommunikation.
+</p>
+</div>
+
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Art. 6 Abs. 1 lit. b DSGVO - Vertragserfüllung</h3>
+<p class="text-gray-600">
+Verarbeitung zur Erfüllung eines Vertrags oder zur Durchführung vorvertraglicher Maßnahmen auf Ihre Anfrage hin.
+</p>
+</div>
+
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Art. 6 Abs. 1 lit. c DSGVO - Rechtliche Verpflichtung</h3>
+<p class="text-gray-600">
+Verarbeitung zur Erfüllung rechtlicher Verpflichtungen, denen wir unterliegen (z.B. Aufbewahrungspflichten).
+</p>
+</div>
+
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Art. 6 Abs. 1 lit. f DSGVO - Berechtigte Interessen</h3>
+<p class="text-gray-600">
+Verarbeitung zur Wahrung unserer berechtigten Interessen, sofern nicht Ihre Interessen oder Grundrechte überwiegen.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="weitergabe" class="py-16 bg-white">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="text-2xl font-bold text-gray-900 mb-8">5. Weitergabe von Daten an Dritte</h2>
+<div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-lg mb-8">
+<p class="text-gray-700">
+<strong>Grundsatz:</strong> Wir geben Ihre personenbezogenen Daten nur dann an Dritte weiter, wenn dies für die Vertragsabwicklung erforderlich ist, Sie ausdrücklich eingewilligt haben oder wir rechtlich dazu verpflichtet sind.
+</p>
+</div>
+
+<div class="space-y-6">
+<div class="bg-gray-50 rounded-lg p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Lieferanten und Partner</h3>
+<p class="text-gray-600 mb-3">
+Für die Beschaffung von Hardware und Software arbeiten wir mit vertrauenswürdigen Partnern zusammen:
+</p>
+<ul class="list-disc list-inside text-gray-600 space-y-1">
+<li>Aquado GmbH (IT-Großhandel)</li>
+<li>Weitere autorisierte Distributoren</li>
+<li>Hersteller für Garantieabwicklung</li>
+</ul>
+</div>
+
+<div class="bg-gray-50 rounded-lg p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Zahlungsdienstleister</h3>
+<p class="text-gray-600 mb-3">
+Für die Abwicklung von Zahlungen nutzen wir folgende Dienstleister:
+</p>
+<ul class="list-disc list-inside text-gray-600 space-y-1">
+<li>Banken für SEPA-Lastschriften</li>
+<li>PayPal für Online-Zahlungen</li>
+<li>Kreditkartenunternehmen (Visa, Mastercard)</li>
+</ul>
+</div>
+
+<div class="bg-gray-50 rounded-lg p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Externe Dienstleister</h3>
+<p class="text-gray-600 mb-3">
+Zur Optimierung unserer Services nutzen wir:
+</p>
+<ul class="list-disc list-inside text-gray-600 space-y-1">
+<li>Cloud-Hosting-Anbieter für Website und E-Mail</li>
+<li>Steuerberater für buchhalterische Aufgaben</li>
+<li>Rechtsanwälte bei rechtlichen Angelegenheiten</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="cookies" class="py-16 bg-gray-50">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="text-2xl font-bold text-gray-900 mb-8">6. Einsatz von Cookies und Tracking-Tools</h2>
+<div class="space-y-6">
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Technisch notwendige Cookies</h3>
+<p class="text-gray-600 mb-3">
+Wir verwenden Cookies, die für den Betrieb der Website erforderlich sind:
+</p>
+<ul class="list-disc list-inside text-gray-600 space-y-1">
+<li>Session-Cookies für die Navigation</li>
+<li>Sicherheits-Cookies zum Schutz vor Angriffen</li>
+<li>Cookies für Kontaktformulare</li>
+</ul>
+</div>
+
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Google Analytics (optional)</h3>
+<p class="text-gray-600 mb-3">
+Zur Analyse der Website-Nutzung setzen wir Google Analytics ein. Dabei werden folgende Daten erfasst:
+</p>
+<ul class="list-disc list-inside text-gray-600 space-y-1 mb-4">
+<li>Anonymisierte IP-Adressen</li>
+<li>Besuchte Seiten und Verweildauer</li>
+<li>Verwendete Geräte und Browser</li>
+<li>Geografische Herkunft (Land/Region)</li>
+</ul>
+<p class="text-gray-600 text-sm bg-blue-50 p-3 rounded">
+<strong>Hinweis:</strong> Sie können der Verwendung von Google Analytics jederzeit widersprechen, indem Sie das Browser-Add-on zur Deaktivierung von Google Analytics installieren.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="sicherheit" class="py-16 bg-white">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="text-2xl font-bold text-gray-900 mb-8">7. Datensicherheit</h2>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="bg-gray-50 rounded-lg p-6">
+<div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-lock-line text-green-600 text-lg"></i>
+</div>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Technische Maßnahmen</h3>
+<ul class="text-gray-600 text-sm space-y-2">
+<li>• SSL/TLS-Verschlüsselung der Website</li>
+<li>• Sichere Server in deutschen Rechenzentren</li>
+<li>• Regelmäßige Sicherheitsupdates</li>
+<li>• Firewall- und Virenschutz</li>
+<li>• Verschlüsselte Datenübertragung</li>
+</ul>
+</div>
+
+<div class="bg-gray-50 rounded-lg p-6">
+<div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-team-line text-blue-600 text-lg"></i>
+</div>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Organisatorische Maßnahmen</h3>
+<ul class="text-gray-600 text-sm space-y-2">
+<li>• Zugriffsbeschränkungen auf Mitarbeiter</li>
+<li>• Regelmäßige Datenschutz-Schulungen</li>
+<li>• Vertraulichkeitsverpflichtungen</li>
+<li>• Datenschutz-Folgenabschätzung</li>
+<li>• Incident-Response-Verfahren</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="betroffenenrechte" class="py-16 bg-gray-50">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="text-2xl font-bold text-gray-900 mb-8">8. Rechte der betroffenen Personen</h2>
+
+<div class="bg-blue-50 border-l-4 border-secondary p-6 rounded-lg mb-8">
+<p class="text-gray-700">
+<strong>Sie haben jederzeit das Recht:</strong> Ihre personenbezogenen Daten betreffend Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung zu verlangen.
+</p>
+</div>
+
+<div class="grid md:grid-cols-2 gap-6">
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Auskunftsrecht (Art. 15 DSGVO)</h3>
+<p class="text-gray-600 text-sm">
+Sie haben das Recht, Auskunft über die von uns verarbeiteten personenbezogenen Daten zu erhalten.
+</p>
+</div>
+
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Berichtigungsrecht (Art. 16 DSGVO)</h3>
+<p class="text-gray-600 text-sm">
+Sie haben das Recht, die Berichtigung unrichtiger oder die Vervollständigung unvollständiger Daten zu verlangen.
+</p>
+</div>
+
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Löschungsrecht (Art. 17 DSGVO)</h3>
+<p class="text-gray-600 text-sm">
+Sie haben das Recht auf Löschung Ihrer personenbezogenen Daten, sofern keine rechtlichen Aufbewahrungspflichten bestehen.
+</p>
+</div>
+
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Einschränkungsrecht (Art. 18 DSGVO)</h3>
+<p class="text-gray-600 text-sm">
+Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
+</p>
+</div>
+
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Widerspruchsrecht (Art. 21 DSGVO)</h3>
+<p class="text-gray-600 text-sm">
+Sie haben das Recht, der Verarbeitung Ihrer personenbezogenen Daten zu widersprechen.
+</p>
+</div>
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Datenübertragbarkeit (Art. 20 DSGVO)</h3>
+<p class="text-gray-600 text-sm">
+Sie haben das Recht, Ihre Daten in einem strukturierten, gängigen Format zu erhalten.
+</p>
+</div>
+</div>
+
+<div class="mt-8 bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-lg">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Beschwerderecht</h3>
+<p class="text-gray-600">
+Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren.
+</p>
+<p class="text-gray-600 mt-2">
+<strong>Zuständige Aufsichtsbehörde:</strong><br>
+Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Rheinland-Pfalz<br>
+Hintere Bleiche 34, 55116 Mainz<br>
+Telefon: +49 6131 208-2449
+</p>
+</div>
+</div>
+</section>
+
+<section id="speicherdauer" class="py-16 bg-white">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="text-2xl font-bold text-gray-900 mb-8">9. Dauer der Speicherung</h2>
+
+<div class="space-y-6">
+<div class="bg-gray-50 rounded-lg p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Allgemeine Speicherfristen</h3>
+<div class="overflow-x-auto">
+<table class="w-full text-sm">
+<thead>
+<tr class="border-b border-gray-200">
+<th class="text-left py-2 font-semibold text-gray-900">Datenart</th>
+<th class="text-left py-2 font-semibold text-gray-900">Speicherdauer</th>
+<th class="text-left py-2 font-semibold text-gray-900">Rechtsgrundlage</th>
+</tr>
+</thead>
+<tbody class="text-gray-600">
+<tr class="border-b border-gray-100">
+<td class="py-2">Kontaktanfragen</td>
+<td class="py-2">2 Jahre nach Bearbeitung</td>
+<td class="py-2">Berechtigte Interessen</td>
+</tr>
+<tr class="border-b border-gray-100">
+<td class="py-2">Kundendaten</td>
+<td class="py-2">10 Jahre nach Vertragsende</td>
+<td class="py-2">Handelsrechtliche Aufbewahrung</td>
+</tr>
+<tr class="border-b border-gray-100">
+<td class="py-2">Rechnungsdaten</td>
+<td class="py-2">10 Jahre</td>
+<td class="py-2">Steuerrechtliche Aufbewahrung</td>
+</tr>
+<tr class="border-b border-gray-100">
+<td class="py-2">Website-Logs</td>
+<td class="py-2">7 Tage</td>
+<td class="py-2">Technische Sicherheit</td>
+</tr>
+<tr>
+<td class="py-2">Newsletter-Daten</td>
+<td class="py-2">Bis zum Widerruf</td>
+<td class="py-2">Einwilligung</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="bg-blue-50 border-l-4 border-secondary p-6 rounded-lg">
+<h3 class="text-lg font-semibold text-gray-900 mb-3">Automatische Löschung</h3>
+<p class="text-gray-600">
+Personenbezogene Daten werden automatisch gelöscht, sobald der Zweck der Speicherung entfällt und keine gesetzlichen Aufbewahrungsfristen mehr bestehen. Bei Widerruf einer Einwilligung erfolgt die Löschung unverzüglich, sofern keine anderen Rechtsgrundlagen für die Verarbeitung vorliegen.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="aenderungen" class="py-16 bg-gray-50">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="text-2xl font-bold text-gray-900 mb-8">10. Änderung der Datenschutzerklärung</h2>
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+<p class="text-gray-600 mb-4">
+Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services.
+</p>
+<p class="text-gray-600 mb-4">
+Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung. Wesentliche Änderungen werden wir Ihnen per E-Mail mitteilen, sofern wir Ihre E-Mail-Adresse haben.
+</p>
+<div class="bg-blue-50 p-4 rounded-lg">
+<p class="text-gray-700 text-sm">
+<strong>Letzte Aktualisierung:</strong> 12. August 2025<br>
+<strong>Version:</strong> 2.1
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="kontakt-datenschutz" class="py-16 bg-white">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="text-2xl font-bold text-gray-900 mb-8">11. Kontakt für Datenschutzanfragen</h2>
+
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-gray-50 rounded-lg p-6">
+<h3 class="text-lg font-semibold text-gray-900 mb-4">Datenschutzbeauftragter</h3>
+<div class="space-y-3 text-gray-600">
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-user-line text-secondary text-sm"></i>
+</div>
+<span>Thomas Otto (Geschäftsführer)</span>
+</div>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-mail-line text-secondary text-sm"></i>
+</div>
+<span>datenschutz@potto.eu</span>
+</div>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-phone-line text-secondary text-sm"></i>
+</div>
+<span>+49 6131 123456</span>
+</div>
+<div class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mr-3 mt-0.5">
+<i class="ri-map-pin-line text-secondary text-sm"></i>
+</div>
+<div>
+Musterstraße 123<br>
+55116 Mainz, Deutschland
+</div>
+</div>
+</div>
+</div>
+
+<div class="bg-secondary/5 rounded-lg p-6 border border-secondary/20">
+<h3 class="text-lg font-semibold text-gray-900 mb-4">Schnelle Hilfe</h3>
+<p class="text-gray-600 mb-4">
+Haben Sie Fragen zum Datenschutz oder möchten Sie Ihre Rechte ausüben? Kontaktieren Sie uns:
+</p>
+<div class="space-y-3">
+<button class="w-full bg-secondary hover:bg-secondary/90 text-white py-3 px-6 !rounded-button font-semibold whitespace-nowrap">
+Datenschutzanfrage stellen
+</button>
+<button class="w-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-white py-3 px-6 !rounded-button font-semibold whitespace-nowrap">
+Datenauskunft anfordern
+</button>
+</div>
+<p class="text-gray-500 text-sm mt-4">
+Wir bearbeiten Ihre Anfrage innerhalb von 30 Tagen gemäß Art. 12 DSGVO.
+</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+  <footer class="bg-gray-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <div class="flex items-center mb-6">
+              <img
+                src="assists/imgs/logo2.png"
+                alt="potto.eu Logo"
+                class="h-12 w-auto object-contain"
+              />
+            </div>
+            <p class="text-gray-400 mb-6">
+              Seit 1997 Ihr vertrauensvoller Partner für professionelle
+              IT-Dienstleistungen in Mainz.
+            </p>
+            <div class="flex space-x-4">
+              <div
+                class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary cursor-pointer"
+              >
+                <i class="ri-facebook-line text-sm"></i>
+              </div>
+              <div
+                class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary cursor-pointer"
+              >
+                <i class="ri-twitter-x-line text-sm"></i>
+              </div>
+              <div
+                class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary cursor-pointer"
+              >
+                <i class="ri-linkedin-line text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Kontakt</h3>
+            <div class="space-y-4 text-gray-400">
+              <div class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mr-3 mt-0.5"
+                >
+                  <i class="ri-map-pin-line text-xs"></i>
+                </div>
+                <div>
+                  Musterstraße 123<br />
+                  55116 Mainz, Deutschland
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="ri-phone-line text-xs"></i>
+                </div>
+                <span>+49 6131 123456</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="ri-mail-line text-xs"></i>
+                </div>
+                <span>info@potto.eu</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Wichtige Links</h3>
+            <div class="space-y-3">
+              <a href="index.html" class="block text-gray-400 hover:text-white"
+                >Home</a
+              >
+              <a href="services.html" class="block text-gray-400 hover:text-white"
+                >Services</a
+              >
+              <a href="kauf.html" class="block text-gray-400 hover:text-white"
+                >Verkauf</a
+              >
+              <a href="Impressum.html" class="block text-gray-400 hover:text-white"
+                >Impressum</a
+              >
+              <a
+                href="datenschutz.html"
+                class="block text-gray-400 hover:text-white"
+                >Datenschutz</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>
+            &copy; 2025 potto.eu - IT-Dienstleistungen Otto. Alle Rechte
+            vorbehalten.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+<div id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-secondary hover:bg-secondary/90 text-white rounded-full flex items-center justify-center cursor-pointer shadow-lg transition-all duration-300 opacity-0 invisible">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-arrow-up-line text-lg"></i>
+</div>
+</div>
+
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+});
+});
+</script>
+
+<script id="back-to-top-script">
+document.addEventListener('DOMContentLoaded', function() {
+const backToTop = document.getElementById('back-to-top');
+window.addEventListener('scroll', function() {
+if (window.pageYOffset > 300) {
+backToTop.classList.remove('opacity-0', 'invisible');
+backToTop.classList.add('opacity-100', 'visible');
+} else {
+backToTop.classList.add('opacity-0', 'invisible');
+backToTop.classList.remove('opacity-100', 'visible');
+}
+});
+backToTop.addEventListener('click', function() {
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+});
+});
+</script>
+
+<script id="smooth-scroll-script">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) {
+const headerHeight = 120;
+const targetPosition = target.offsetTop - headerHeight;
+window.scrollTo({
+top: targetPosition,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+
+</body>
+</html>

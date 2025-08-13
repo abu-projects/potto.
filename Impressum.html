@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impressum - IT Dienstleistungen Otto</title>
+<script src="https://cdn.tailwindcss.com/3.4.16">
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Poppins', sans-serif;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#202F57",
+        secondary: "#2CB0DB",
+      },
+      borderRadius: {
+        none: "0px",
+        sm: "4px",
+        DEFAULT: "8px",
+        md: "12px",
+        lg: "16px",
+        xl: "20px",
+        "2xl": "24px",
+        "3xl": "32px",
+        full: "9999px",
+        button: "8px",
+      },
+      fontFamily: {
+        sans: ["Poppins", "sans-serif"],
+      },
+    },
+  },
+};
+</script>
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+html {
+scroll-behavior: smooth;
+}
+</style>
+</head>
+<body class="bg-white">
+   <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+      <div class="bg-secondary text-white py-2">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center text-sm">
+    <div class="flex items-center space-x-6">
+      <div class="flex items-center">
+        <div class="w-4 h-4 flex items-center justify-center mr-2">
+          <i class="ri-phone-line text-xs"></i>
+        </div>
+        <span class=" max-[465px]:hidden">+49 6131 123456</span>
+      </div>
+      <div class="flex items-center">
+        <div class="w-4 h-4 flex items-center justify-center mr-2">
+          <i class="ri-mail-line text-xs"></i>
+        </div>
+        <span class="max-[465px]:hidden ">info@potto.eu</span>
+      </div>
+    </div>
+    <div class="flex items-center space-x-4 text-base">
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-facebook-line"></i>
+      </div>
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-twitter-x-line"></i> <!-- changed from twitter to x -->
+      </div>
+      <div class="w-5 h-5 flex items-center justify-center">
+        <i class="ri-linkedin-line"></i>
+      </div>
+    </div>
+  </div>
+</div>
+      <nav class="bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+              <div class="flex items-center">
+             <a href="index.html">    <img
+                  src="assists/imgs/logo1.png"
+                  alt="potto.eu Logo"
+                  class="h-24 w-auto object-contain mr-3 py-6 px-3"
+                /></a>
+              </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+              <a
+                href="index.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Home</a
+              >
+              <a
+                href="services.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Services</a
+              >
+                <a
+                href="kauf.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Verkauf</a
+              >
+              <a
+                href="Konakt.html"
+                class="text-gray-700 hover:text-primary font-medium"
+                >Kontakt</a
+              >
+            
+              <a href="services.html#service-anf" class="inline-block bg-secondary hover:bg-primary text-white font-semibold px-8 py-2 rounded-button text-lg   shadow transition">
+              Service anfordern
+            </a>
+            </div>
+
+            <div class="md:hidden">
+              <button
+                id="mobile-menu-button"
+                class="w-8 h-8 flex items-center justify-center"
+              >
+                <i class="ri-menu-line text-xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+        
+          id="mobile-menu"
+          class="hidden md:hidden bg-white border-t border-gray-100"
+        >
+          <div class="px-4 py-2 space-y-1">
+            <a
+              href="index.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Services</a
+            >
+            <a
+              href="kauf.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Verkauf</a
+            >
+            <a
+              href="Konakt.html"
+              class="block py-2 text-gray-700 hover:text-primary font-medium"
+              >Kontact</a
+            >
+                <a href="services.html#service-anf" class="inline-block bg-secondary hover:bg-primary text-white font-semibold px-8 py-2 rounded-button text-lg   shadow transition">
+              Service anfordern
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<main class="pt-24">
+<section class="py-16 bg-gradient-to-br from-primary to-primary/90">
+<div class="max-w-7xl mx-auto px-4 text-center">
+<h1 class="text-4xl font-bold text-white mb-6">Impressum</h1>
+<p class="text-xl text-white max-w-3xl mx-auto">
+Rechtliche Angaben gemäß § 5 TMG und Informationen zur Kontaktaufnahme
+</p>
+</div>
+</section>
+
+<section id="unternehmen" class="py-16 bg-white">
+<div class="max-w-4xl mx-auto px-4">
+<div class="bg-gray-50 rounded-xl p-8 mb-12">
+<h2 class="text-2xl font-bold text-gray-900 mb-6">Angaben gemäß § 5 TMG</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div>
+<h3 class="text-lg font-semibold text-gray-900 mb-4">Unternehmen</h3>
+<div class="space-y-2 text-gray-600">
+<p class="font-medium text-lg">IT Dienstleistungen Otto</p>
+<p class="text-gray-500">Inhaber: Peter Otto</p>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-900 mb-4">Anschrift</h3>
+<div class="space-y-2 text-gray-600">
+<p>Schneckenburgerstrasse 15</p>
+<p>55131 Mainz</p>
+<p>Deutschland</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="kontakt" class="py-16 bg-gray-50">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="text-2xl font-bold text-gray-900 mb-8">Kontaktdaten</h2>
+
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+<h3 class="text-xl font-semibold text-gray-900 mb-6 flex items-center">
+<div class="w-8 h-8 bg-secondary/10 rounded-lg flex items-center justify-center mr-3">
+<i class="ri-phone-line text-secondary"></i>
+</div>
+Telefon & Fax
+</h3>
+<div class="space-y-4">
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-phone-line text-xs text-secondary"></i>
+</div>
+<div>
+<p class="font-medium text-gray-900">Telefon</p>
+<p class="text-gray-600">06131 33 60 982</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-printer-line text-xs text-secondary"></i>
+</div>
+<div>
+<p class="font-medium text-gray-900">Fax</p>
+<p class="text-gray-600">06131 33 60 983</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+<h3 class="text-xl font-semibold text-gray-900 mb-6 flex items-center">
+<div class="w-8 h-8 bg-secondary/10 rounded-lg flex items-center justify-center mr-3">
+<i class="ri-mail-line text-secondary"></i>
+</div>
+E-Mail & Online
+</h3>
+<div class="space-y-4">
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-mail-line text-xs text-secondary"></i>
+</div>
+<div>
+<p class="font-medium text-gray-900">E-Mail</p>
+<p class="text-gray-600">p.otto@potto.eu</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-global-line text-xs text-secondary"></i>
+</div>
+<div>
+<p class="font-medium text-gray-900">Internet</p>
+<p class="text-gray-600">www.potto.eu</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="mt-8 bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-3">
+<i class="ri-file-text-line text-primary"></i>
+</div>
+Umsatzsteuer-Identifikationsnummer
+</h3>
+<p class="text-gray-600 mb-2">Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:</p>
+<p class="font-mono text-lg font-semibold text-primary">DE173303351</p>
+</div>
+</div>
+</section>
+
+<section id="rechtliches" class="py-16 bg-white">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="text-2xl font-bold text-gray-900 mb-8">Rechtliche Hinweise</h2>
+
+<div class="space-y-8">
+<div class="bg-gray-50 rounded-xl p-8">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+<i class="ri-scales-line text-blue-600"></i>
+</div>
+EU-Streitbeilegung
+</h3>
+<p class="text-gray-600 mb-4">
+Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+</p>
+<a href="https://ec.europa.eu/consumers/odr" target="_blank" class="inline-flex items-center text-secondary hover:text-secondary/80 font-medium">
+<span>https://ec.europa.eu/consumers/odr</span>
+<div class="w-4 h-4 flex items-center justify-center ml-2">
+<i class="ri-external-link-line text-xs"></i>
+</div>
+</a>
+</div>
+
+<div class="bg-gray-50 rounded-xl p-8">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center mr-3">
+<i class="ri-information-line text-orange-600"></i>
+</div>
+Verbraucherstreitbeilegung
+</h3>
+<p class="text-gray-600">
+Wir sind weder verpflichtet noch bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+</p>
+</div>
+
+<div class="bg-gray-50 rounded-xl p-8">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+<i class="ri-shield-check-line text-green-600"></i>
+</div>
+Haftungsausschluss
+</h3>
+<div class="space-y-4 text-gray-600">
+<div>
+<h4 class="font-semibold text-gray-900 mb-2">Haftung für Inhalte</h4>
+<p class="text-sm">
+Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht unter der Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+</p>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900 mb-2">Haftung für Links</h4>
+<p class="text-sm">
+Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+</p>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900 mb-2">Urheberrecht</h4>
+<p class="text-sm">
+Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="links" class="py-16 bg-gray-50">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="text-2xl font-bold text-gray-900 mb-8">Weitere Informationen</h2>
+
+<div class="grid md:grid-cols-2 gap-6">
+<div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-3">
+<i class="ri-file-list-line text-primary"></i>
+</div>
+Allgemeine Geschäftsbedingungen
+</h3>
+<p class="text-gray-600 mb-4">
+Unsere vollständigen Geschäftsbedingungen finden Sie unter folgendem Link:
+</p>
+<a href="#" class="inline-flex items-center bg-primary hover:bg-primary/90 text-white px-6 py-3 !rounded-button font-semibold whitespace-nowrap">
+<span>AGB hier einsehen</span>
+<div class="w-4 h-4 flex items-center justify-center ml-2">
+<i class="ri-arrow-right-line text-xs"></i>
+</div>
+</a>
+</div>
+
+<div class="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-8 h-8 bg-secondary/10 rounded-lg flex items-center justify-center mr-3">
+<i class="ri-questionnaire-line text-secondary"></i>
+</div>
+Anfrageformular
+</h3>
+<p class="text-gray-600 mb-4">
+Haben Sie Fragen zu unseren Dienstleistungen? Nutzen Sie unser Online-Anfrageformular:
+</p>
+<a href="#" class="inline-flex items-center bg-secondary hover:bg-secondary/90 text-white px-6 py-3 !rounded-button font-semibold whitespace-nowrap">
+<span>Anfrage stellen</span>
+<div class="w-4 h-4 flex items-center justify-center ml-2">
+<i class="ri-send-plane-line text-xs"></i>
+</div>
+</a>
+</div>
+</div>
+
+<div class="mt-8 bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+<h3 class="text-xl font-semibold text-gray-900 mb-6">Öffnungszeiten</h3>
+<div class="grid md:grid-cols-2 gap-8">
+<div>
+<h4 class="font-semibold text-gray-900 mb-4">Bürozeiten</h4>
+<div class="space-y-2 text-gray-600">
+<div class="flex justify-between">
+<span>Montag - Freitag:</span>
+<span class="font-medium">08:00 - 18:00 Uhr</span>
+</div>
+<div class="flex justify-between">
+<span>Samstag:</span>
+<span class="font-medium">09:00 - 14:00 Uhr</span>
+</div>
+<div class="flex justify-between">
+<span>Sonntag:</span>
+<span class="font-medium">Geschlossen</span>
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-semibold text-gray-900 mb-4">Notfall-Service</h4>
+<div class="space-y-2 text-gray-600">
+<p>24/7 Notfall-Support für Geschäftskunden</p>
+<p class="font-medium">Notfall-Hotline: 06131 33 60 999</p>
+<p class="text-sm text-gray-500">Zusätzliche Gebühren können anfallen</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 bg-white">
+<div class="max-w-4xl mx-auto px-4">
+<div class="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center">
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Haben Sie Fragen?</h3>
+<p class="text-gray-600 mb-6">
+Bei Fragen zum Impressum oder zu unseren Dienstleistungen stehen wir Ihnen gerne zur Verfügung.
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a href="tel:0613133609982" class="bg-primary hover:bg-primary/90 text-white px-8 py-3 !rounded-button font-semibold whitespace-nowrap inline-flex items-center justify-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-phone-line text-sm"></i>
+</div>
+Anrufen
+</a>
+<a href="mailto:p.otto@potto.eu" class="border border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 !rounded-button font-semibold whitespace-nowrap inline-flex items-center justify-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-mail-line text-sm"></i>
+</div>
+E-Mail schreiben
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<button id="back-to-top" class="fixed bottom-6 right-6 bg-secondary hover:bg-primary/90 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 transition-opacity duration-300">
+<i class="ri-arrow-up-line"></i>
+</button>
+
+  <footer class="bg-gray-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <div class="flex items-center mb-6">
+              <img
+                src="assists/imgs/logo2.png"
+                alt="potto.eu Logo"
+                class="h-12 w-auto object-contain"
+              />
+            </div>
+            <p class="text-gray-400 mb-6">
+              Seit 1997 Ihr vertrauensvoller Partner für professionelle
+              IT-Dienstleistungen in Mainz.
+            </p>
+            <div class="flex space-x-4">
+              <div
+                class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary cursor-pointer"
+              >
+                <i class="ri-facebook-line text-sm"></i>
+              </div>
+              <div
+                class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary cursor-pointer"
+              >
+                <i class="ri-twitter-x-line text-sm"></i>
+              </div>
+              <div
+                class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary cursor-pointer"
+              >
+                <i class="ri-linkedin-line text-sm"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Kontakt</h3>
+            <div class="space-y-4 text-gray-400">
+              <div class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mr-3 mt-0.5"
+                >
+                  <i class="ri-map-pin-line text-xs"></i>
+                </div>
+                <div>
+                  Musterstraße 123<br />
+                  55116 Mainz, Deutschland
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="ri-phone-line text-xs"></i>
+                </div>
+                <span>+49 6131 123456</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="ri-mail-line text-xs"></i>
+                </div>
+                <span>info@potto.eu</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-6">Wichtige Links</h3>
+            <div class="space-y-3">
+              <a href="index.html" class="block text-gray-400 hover:text-white"
+                >Home</a
+              >
+              <a href="services.html" class="block text-gray-400 hover:text-white"
+                >Services</a
+              >
+              <a href="kauf.html" class="block text-gray-400 hover:text-white"
+                >Verkauf</a
+              >
+              <a href="Impressum.html" class="block text-gray-400 hover:text-white"
+                >Impressum</a
+              >
+              <a
+                href="datenschutz.html"
+                class="block text-gray-400 hover:text-white"
+                >Datenschutz</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>
+            &copy; 2025 potto.eu - IT-Dienstleistungen Otto. Alle Rechte
+            vorbehalten.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+<script id="mobile-menu-script">
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileMenuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  mobileMenuButton.addEventListener("click", function () {
+    mobileMenu.classList.toggle("hidden");
+  });
+});
+</script>
+
+<script id="back-to-top-script">
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTopButton = document.getElementById("back-to-top");
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 300) {
+      backToTopButton.style.opacity = "1";
+    } else {
+      backToTopButton.style.opacity = "0";
+    }
+  });
+  backToTopButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});
+</script>
+
+<script id="smooth-scroll-script">
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll('a[href^="#"]');
+  links.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+      if (href === "#") return;
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        const headerHeight = 120;
+        const targetPosition = target.offsetTop - headerHeight;
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>

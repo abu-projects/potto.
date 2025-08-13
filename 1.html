@@ -711,101 +711,34 @@
         </div>
       </div>
     </footer>
-    <div
-      id="impressum-page"
-      class="hidden fixed inset-0 bg-white z-50 overflow-y-auto"
-    >
-      <div class="min-h-screen">
-        <header class="bg-white shadow-sm">
-          <div
-            class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center"
-          >
-            <h1 class="text-2xl font-bold text-gray-900">Impressum</h1>
-            <button
-              id="close-impressum"
-              class="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-700"
-            >
-              <i class="ri-close-line text-xl"></i>
-            </button>
-          </div>
-        </header>
-        <main class="max-w-4xl mx-auto px-4 py-12">
-          <div class="prose prose-lg max-w-none">
-            <h2>Angaben gemäß § 5 TMG</h2>
-            <p>
-              IT-Dienstleistungen Otto<br />
-              potto.eu<br />
-              Musterstraße 123<br />
-              55116 Mainz<br />
-              Deutschland
-            </p>
-            <h3>Vertreten durch:</h3>
-            <p>Otto Mustermann</p>
-            <h3>Kontakt:</h3>
-            <p>
-              Telefon: +49 6131 123456<br />
-              Fax: +49 6131 123457<br />
-              E-Mail: info@potto.eu
-            </p>
-            <h3>Umsatzsteuer-ID:</h3>
-            <p>
-              Umsatzsteuer-Identifikationsnummer gemäß §27a
-              Umsatzsteuergesetz:<br />
-              DE123456789
-            </p>
-            <h3>Wirtschafts-ID:</h3>
-            <p>DE123456789</p>
-            <h3>Aufsichtsbehörde:</h3>
-            <p>
-              Handwerkskammer Rheinhessen<br />
-              Dagobertstraße 2<br />
-              55116 Mainz
-            </p>
-            <h3>Berufsbezeichnung und berufsrechtliche Regelungen:</h3>
-            <p>
-              Berufsbezeichnung: IT-Systemelektroniker<br />
-              Zuständige Kammer: Handwerkskammer Rheinhessen<br />
-              Verliehen durch: Deutschland
-            </p>
-            <h2>Haftung für Inhalte</h2>
-            <p>
-              Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene
-              Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
-              verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter
-              jedoch nicht unter der Verpflichtung, übermittelte oder
-              gespeicherte fremde Informationen zu überwachen oder nach
-              Umständen zu forschen, die auf eine rechtswidrige Tätigkeit
-              hinweisen.
-            </p>
-            <h2>Haftung für Links</h2>
-            <p>
-              Unser Angebot enthält Links zu externen Websites Dritter, auf
-              deren Inhalte wir keinen Einfluss haben. Deshalb können wir für
-              diese fremden Inhalte auch keine Gewähr übernehmen. Für die
-              Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
-              oder Betreiber der Seiten verantwortlich.
-            </p>
-            <h2>Urheberrecht</h2>
-            <p>
-              Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
-              diesen Seiten unterliegen dem deutschen Urheberrecht. Die
-              Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
-              Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
-              schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
-            </p>
-            <h2>Datenschutz</h2>
-            <p>
-              Die Nutzung unserer Webseite ist in der Regel ohne Angabe
-              personenbezogener Daten möglich. Soweit auf unseren Seiten
-              personenbezogene Daten (beispielsweise Name, Anschrift oder
-              E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich,
-              stets auf freiwilliger Basis.
-            </p>
-            <p class="text-sm text-gray-500 mt-12">Stand: Januar 2024</p>
-          </div>
-        </main>
+   
+    <div id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-secondary hover:bg-secondary/90 text-white rounded-full flex items-center justify-center cursor-pointer shadow-lg transition-all duration-300 opacity-0 invisible">
+      <div class="w-6 h-6 flex items-center justify-center">
+        <i class="ri-arrow-up-line text-lg"></i>
       </div>
     </div>
+
+    <script id="back-to-top-script">
+      document.addEventListener('DOMContentLoaded', function() {
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+          if (window.pageYOffset > 300) {
+            backToTop.classList.remove('opacity-0', 'invisible');
+            backToTop.classList.add('opacity-100', 'visible');
+          } else {
+            backToTop.classList.add('opacity-0', 'invisible');
+            backToTop.classList.remove('opacity-100', 'visible');
+          }
+        });
+        backToTop.addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
+
     <script id="mobile-menu-script">
       document.addEventListener("DOMContentLoaded", function () {
         const mobileMenuButton = document.getElementById("mobile-menu-button");
