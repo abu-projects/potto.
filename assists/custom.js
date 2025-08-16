@@ -117,4 +117,39 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.style.overflow = 'auto';
     });
   }
+  
+  // Service dropdown functionality
+  const serviceDropdown = document.getElementById("service-dropdown");
+  const serviceOptions = document.getElementById("service-options");
+  const selectedService = document.getElementById("selected-service");
+  const serviceTypeInput = document.getElementById("service-type");
+  const serviceOptionButtons = document.querySelectorAll(".service-option");
+  
+  if (serviceDropdown && serviceOptions) {
+    serviceDropdown.addEventListener("click", function () {
+      serviceOptions.classList.toggle("hidden");
+    });
+    
+    if (serviceOptionButtons.length > 0) {
+      serviceOptionButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const value = this.getAttribute("data-value");
+          const text = this.textContent.trim();
+          if (selectedService) selectedService.textContent = text;
+          if (serviceTypeInput) serviceTypeInput.value = value;
+          serviceOptions.classList.add("hidden");
+        });
+      });
+    }
+    
+    document.addEventListener("click", function (e) {
+      if (
+        serviceDropdown && serviceOptions &&
+        !serviceDropdown.contains(e.target) &&
+        !serviceOptions.contains(e.target)
+      ) {
+        serviceOptions.classList.add("hidden");
+      }
+    });
+  }
 });
